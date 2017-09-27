@@ -52,6 +52,7 @@
     <string name="str_addpoint_item">加分指标</string>
     <string name="str_subpoint_item">减分指标</string>
     <string name="str_describe">描述</string>
+    <string name="str_accessory">附件</string>
 
 
 </resources>

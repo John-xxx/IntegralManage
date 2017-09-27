@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_launcher" />
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 android:background="@drawable/selector_textview"
                 android:clickable="true"
                 android:drawablePadding="@dimen/most_use_paddingSix"
-                android:drawableTop="@drawable/integral_search"
+                android:drawableTop="@mipmap/integral_search"
                 android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingNine"
                 android:paddingTop="@dimen/most_use_paddingEighteen"
@@ -82,7 +82,7 @@
                 android:background="@drawable/selector_textview"
                 android:clickable="true"
                 android:drawablePadding="@dimen/most_use_paddingSix"
-                android:drawableTop="@drawable/check_point"
+                android:drawableTop="@mipmap/check_point"
                 android:layout_marginLeft="@dimen/most_use_paddingNine"
                 android:layout_marginRight="@dimen/most_use_paddingNine"
                 android:gravity="center"
@@ -100,7 +100,7 @@
                 android:background="@drawable/selector_textview"
                 android:clickable="true"
                 android:drawablePadding="@dimen/most_use_paddingSix"
-                android:drawableTop="@drawable/integral_change"
+                android:drawableTop="@mipmap/integral_change"
                 android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingNine"
                 android:paddingTop="@dimen/most_use_paddingEighteen"
@@ -124,7 +124,7 @@
                 android:background="@drawable/selector_textview"
                 android:clickable="true"
                 android:drawablePadding="@dimen/most_use_paddingSix"
-                android:drawableTop="@drawable/complaint"
+                android:drawableTop="@mipmap/complaint"
                 android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingNine"
                 android:paddingTop="@dimen/most_use_paddingEighteen"
@@ -142,7 +142,7 @@
                 android:drawablePadding="@dimen/most_use_paddingSix"
                 android:layout_marginLeft="@dimen/most_use_paddingNine"
                 android:layout_marginRight="@dimen/most_use_paddingNine"
-                android:drawableTop="@drawable/push_message"
+                android:drawableTop="@mipmap/push_message"
                 android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingNine"
                 android:paddingTop="@dimen/most_use_paddingEighteen"

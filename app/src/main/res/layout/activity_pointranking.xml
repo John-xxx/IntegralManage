@@ -17,14 +17,14 @@
             android:id="@+id/pointranking_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back_" />
+            android:background="@mipmap/back_" />
 
         <ImageView
             android:id="@+id/ranking_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:background="@drawable/search" />
+            android:background="@mipmap/search" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -17,7 +17,7 @@
             android:id="@+id/managerchecked_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back_" />
+            android:background="@mipmap/back_" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,11 +32,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
         android:layout_marginBottom="@dimen/most_use_paddingFifteen"
         android:layout_marginLeft="@dimen/most_use_paddingFifteen"
         android:layout_marginRight="@dimen/most_use_paddingFifteen"
-        android:layout_marginTop="@dimen/most_use_paddingEighteen">
+        android:layout_marginTop="@dimen/most_use_paddingEighteen"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/pushslide"
+                android:drawableRight="@mipmap/pushslide"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
                 android:text="成都"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/pushslide"
+                android:drawableRight="@mipmap/pushslide"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
                 android:text="城南加油站"
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/pushslide"
+                android:drawableRight="@mipmap/pushslide"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
                 android:text="李花"
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/ico_time"
+                android:drawableRight="@mipmap/ico_time"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
                 android:text="2017-07-15 16:00"
@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/pushslide"
+                android:drawableRight="@mipmap/pushslide"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
                 android:text="+3|主动用普通话交流"
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/pushslide"
+                android:drawableRight="@mipmap/pushslide"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
                 android:text="-3|无故旷工"
@@ -180,13 +180,34 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/button_bg"
-                android:drawableRight="@drawable/pushslide"
+                android:gravity="left|top"
+                android:hint="问题描述"
                 android:padding="@dimen/most_use_paddingFifteen"
                 android:singleLine="true"
-                android:text="问题描述"
                 android:textColor="@color/color_hint_text"
+                android:textColorHint="@color/color_hint_text"
                 android:textSize="@dimen/logo_text_size" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_accessory"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <LinearLayout
+                android:id="@+id/accessory_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/add_accessory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/add_accessory" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
