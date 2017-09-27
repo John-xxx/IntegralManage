@@ -57,4 +57,12 @@
     <string name="str_accessory">附件</string>
 
 
+
+    <string name="str_total_change">兑换汇总</string>
+    <string name="str_residue_point">可兑换积分</string>
+    <string name="str_changed_point">已兑换积分</string>
+    <string name="str_moneyof_goods">已兑换商品价值</string>
+
+
+
 </resources>

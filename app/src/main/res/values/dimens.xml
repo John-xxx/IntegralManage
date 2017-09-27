@@ -20,5 +20,6 @@
 
 
     <dimen name="logo_text_size">18sp</dimen>
+    <dimen name="textsize_tweentyFour">24sp</dimen>
     <dimen name="main_position_size">15sp</dimen>
 </resources>
