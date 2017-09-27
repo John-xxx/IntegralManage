@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yz.dl.integralmanage">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Activity -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.IntegralSearch"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.PointRanking"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.IntegralSearchIndividual"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.DynamicsIntegral"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.StaticIntegral"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.HistoryIntegral"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.InspectorChecked"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.ManagerChecked"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.FeedProblemOffice"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".ui.FeedProblemPersonal"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".ui.IntegralChangeOffice"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".ui.IntegralChangePersonal"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".ui.PushMessage"
+            android:launchMode="singleTask"/>
+    </application>
+
+</manifest>

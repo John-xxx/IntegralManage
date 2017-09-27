@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_position"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/pointranking_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_" />
+
+        <ImageView
+            android:id="@+id/ranking_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_pointranking"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingTop="@dimen/most_use_paddingFifteen"
+            android:background="@drawable/show_view"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/homepage_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/most_use_paddingThirty">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/ranking_tab_manager"
+                        style="@style/tab_button"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="@string/str_text_stationManager"
+                        android:textColor="@color/most_bg_color"
+                        android:textSize="@dimen/main_position_size" />
+
+                    <RadioButton
+                        android:id="@+id/ranking_tab_managment"
+                        style="@style/tab_button"
+                        android:button="@null"
+                        android:text="@string/str_text_management"
+                        android:textColor="@color/most_bg_color"
+                        android:textSize="@dimen/main_position_size" />
+
+                    <RadioButton
+                        android:id="@+id/ranking_tab_operator"
+                        style="@style/tab_button"
+                        android:button="@null"
+                        android:text="@string/str_text_operator"
+                        android:textColor="@color/most_bg_color"
+                        android:textSize="@dimen/main_position_size" />
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.yz.dl.integralmanage.view.BanSlideViewPager
+            android:id="@+id/ranking_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_linear" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

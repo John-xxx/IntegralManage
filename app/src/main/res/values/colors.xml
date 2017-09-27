@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="color_slide_text">#4687bb</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_title_bg">#1F88DE</color>
+
+    <color name="color_hint_text">#9a9a9a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="most_bg_color">#f5f5f5</color>
+    <color name="color_bg">#FBFBFB</color>
+    <color name="color_position">#F8F8F8</color>
+
+    <color name="color_integral_person">#0000AA</color>
+    
+    <color name="color_main_text">#37556D</color>
+    <color name="black">#000000</color>
+</resources>

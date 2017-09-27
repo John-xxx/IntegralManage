@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/managerchecked_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/managerchecked"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+        android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+        android:layout_marginRight="@dimen/most_use_paddingFifteen"
+        android:layout_marginTop="@dimen/most_use_paddingEighteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingNine"
+            android:paddingTop="@dimen/most_use_paddingNine">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:text="@string/str_text_area"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="成都"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_text_gas"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="城南加油站"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="李花"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_checked_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/ico_time"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="2017-07-15 16:00"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_addpoint_item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="+3|主动用普通话交流"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_subpoint_item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="-3|无故旷工"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_describe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@drawable/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="问题描述"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

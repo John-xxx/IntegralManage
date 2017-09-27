@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yz.dl.integralmanage.ui.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/show_view"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_login_logo"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_login_layout"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_login_margin"
+        android:paddingRight="@dimen/dimen_login_margin">
+
+
+        <com.yz.dl.integralmanage.view.LineEditText
+            android:id="@+id/login_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/hint_idcard"
+            android:padding="@dimen/most_use_paddingFive"
+            android:singleLine="true"
+            android:textColorHint="@color/color_hint_text"
+            android:textSize="@dimen/logo_text_size" />
+
+        <com.yz.dl.integralmanage.view.LineEditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_login_edit"
+            android:background="@null"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/most_use_paddingFive"
+            android:singleLine="true"
+            android:textColorHint="@color/color_hint_text"
+            android:textSize="@dimen/logo_text_size" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/most_use_paddingFive"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/locked" />
+
+            <com.yz.dl.integralmanage.view.SlideUnlockView
+                android:id="@+id/slideunlock"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/most_use_paddingNine"
+                android:layout_toLeftOf="@+id/image"
+                android:background="@drawable/slide_bg"
+                app:lock_drawable="@drawable/slide"
+                app:lock_radius="30dp"
+                app:lock_tips_tx="按住左边滑块，拖动解锁"
+                app:lock_tips_tx_color="@color/color_slide_text"
+                app:locl_tips_tx_size="12sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/login"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/logo_text_size" />
+
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/most_use_paddingFifteen"
+            android:background="@drawable/button_bg"
+            android:text="@string/exit"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/logo_text_size" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/forgetpassword"
+            android:textColor="@color/color_hint_text"
+            android:layout_marginTop="@dimen/most_use_paddingFifteen"
+            android:textSize="@dimen/main_position_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

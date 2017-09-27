@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_position"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/integralsearch_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_integral_search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+        android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+        android:layout_marginRight="@dimen/most_use_paddingFifteen"
+        android:layout_marginTop="@dimen/most_use_paddingEighteen"
+        android:background="@drawable/scrollview_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingNine"
+            android:paddingTop="@dimen/most_use_paddingNine">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/most_use_paddingNine"
+                android:layout_marginLeft="@dimen/most_use_paddingNine"
+                android:layout_marginRight="@dimen/most_use_paddingNine"
+                android:layout_marginTop="@dimen/most_use_paddingNine"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/office_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/ico_location"
+                    android:drawablePadding="@dimen/most_use_paddingFive"
+                    android:drawableRight="@drawable/pushslide"
+                    android:text="@string/str_default_office"
+                    android:textColor="@color/color_title_bg"
+                    android:textSize="@dimen/logo_text_size" />
+
+                <TextView
+                    android:id="@+id/month_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_bg"
+                    android:drawablePadding="@dimen/most_use_paddingFive"
+                    android:drawableRight="@drawable/pushslide"
+                    android:paddingLeft="@dimen/most_use_paddingFive"
+                    android:paddingRight="@dimen/most_use_paddingFive"
+                    android:text="@string/str_default_month"
+                    android:textColor="@color/color_title_bg"
+                    android:textSize="@dimen/logo_text_size" />
+
+                <TextView
+                    android:id="@+id/date_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/most_use_paddingFive"
+                    android:layout_toLeftOf="@id/month_select"
+                    android:background="@drawable/button_bg"
+                    android:drawablePadding="@dimen/most_use_paddingFive"
+                    android:drawableRight="@drawable/pushslide"
+                    android:paddingLeft="@dimen/most_use_paddingFive"
+                    android:paddingRight="@dimen/most_use_paddingFive"
+                    android:text="@string/str_default_date"
+                    android:textColor="@color/color_title_bg"
+                    android:textSize="@dimen/logo_text_size" />
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:background="@drawable/scrollview_bg"
+                android:divider="@color/most_bg_color"
+                android:showDividers="end">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/scrollview_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine">
+
+                        <TextView
+                            android:id="@+id/total_station"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_text_total_station"
+                            android:textColor="@color/color_title_bg"
+                            android:textSize="@dimen/main_position_size" />
+
+                        <TextView
+                            android:id="@+id/total_station_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/most_use_paddingFive"
+                            android:text="162"
+                            android:textColor="@color/color_title_bg"
+                            android:textSize="@dimen/logo_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/scrollview_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_text_total_person"
+                            android:textColor="@color/color_title_bg"
+                            android:textSize="@dimen/main_position_size" />
+
+                        <TextView
+                            android:id="@+id/total_person_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/most_use_paddingFive"
+                            android:text="1620"
+                            android:textColor="@color/color_title_bg"
+                            android:textSize="@dimen/logo_text_size" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="人数"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="平均分"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/stationManager"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="@string/str_text_stationManager"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/stationManager_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="21"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/stationManager_avg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="90"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/management"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="@string/str_text_management"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/management_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="19"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/management_avg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="89"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/operator"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="@string/str_text_operator"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/operator_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="20"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/operator_avg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="88"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

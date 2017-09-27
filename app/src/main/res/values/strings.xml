@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">加油站员工积分制管理系统</string>
+
+
+    <string name="login">登录</string>
+    <string name="exit">退出</string>
+    <string name="forgetpassword">忘记密码？</string>
+
+
+    <string name="hint_idcard">身份证号</string>
+    <string name="hint_password">密码</string>
+    <string name="default_name">刘军</string>
+    <string name="default_position">省公司</string>
+
+    <string name="str_pointranking">积分排名</string>
+    <string name="str_integral_search">积分查询</string>
+    <string name="str_check_point">现场打分</string>
+    <string name="str_integral_change">积分兑换</string>
+    <string name="str_problem">问题投诉</string>
+    <string name="str_mesage">消息推送</string>
+    <string name="str_default_office">成都分公司</string>
+    <string name="str_default_name">聂仁杰</string>
+    <string name="str_default_date">2017年</string>
+    <string name="str_default_month">7月</string>
+    <string name="str_history_integral">历史积分</string>
+
+    <string name="str_text_total_station">总站数</string>
+    <string name="str_text_total_person">总人数</string>
+    <string name="str_text_stationManager">站经理</string>
+    <string name="str_text_management">综管员</string>
+    <string name="str_text_operator">加油员</string>
+    
+    <string name="str_text_area">片区</string>
+    <string name="str_text_gas">加油站</string>
+    <string name="str_text_jobs">岗位</string>
+    <string name="str_text_totalpoint">总积分</string>
+    <string name="str_text_staticpoint">静态积分</string>
+    <string name="str_text_dynamicspoint">动态积分</string>
+    <string name="str_text_office_ranking">公司排名</string>
+    <string name="str_text_area_ranking">区域排名</string>
+    <string name="str_text_gas_ranking">加油站排名</string>
+
+
+    <string name="str_ranking">排名</string>
+    <string name="str_name">姓名</string>
+
+
+
+
+    <string name="managerchecked">站经理打分</string>
+    <string name="str_checked_time">时间</string>
+    <string name="str_addpoint_item">加分指标</string>
+    <string name="str_subpoint_item">减分指标</string>
+    <string name="str_describe">描述</string>
+
+
+</resources>
