@@ -17,7 +17,7 @@
             android:id="@+id/integralsearch_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back_" />
+            android:background="@mipmap/back_" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,9 +60,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:drawableLeft="@drawable/ico_location"
+                    android:drawableLeft="@mipmap/ico_location"
                     android:drawablePadding="@dimen/most_use_paddingFive"
-                    android:drawableRight="@drawable/pushslide"
+                    android:drawableRight="@mipmap/pushslide"
                     android:text="@string/str_default_office"
                     android:textColor="@color/color_title_bg"
                     android:textSize="@dimen/logo_text_size" />
@@ -74,7 +74,7 @@
                     android:layout_alignParentRight="true"
                     android:background="@drawable/button_bg"
                     android:drawablePadding="@dimen/most_use_paddingFive"
-                    android:drawableRight="@drawable/pushslide"
+                    android:drawableRight="@mipmap/pushslide"
                     android:paddingLeft="@dimen/most_use_paddingFive"
                     android:paddingRight="@dimen/most_use_paddingFive"
                     android:text="@string/str_default_month"
@@ -89,7 +89,7 @@
                     android:layout_toLeftOf="@id/month_select"
                     android:background="@drawable/button_bg"
                     android:drawablePadding="@dimen/most_use_paddingFive"
-                    android:drawableRight="@drawable/pushslide"
+                    android:drawableRight="@mipmap/pushslide"
                     android:paddingLeft="@dimen/most_use_paddingFive"
                     android:paddingRight="@dimen/most_use_paddingFive"
                     android:text="@string/str_default_date"

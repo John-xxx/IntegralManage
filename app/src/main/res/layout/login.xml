@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/logo" />
+            android:src="@mipmap/logo" />
 
         <TextView
             android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
-                android:background="@drawable/locked" />
+                android:background="@mipmap/locked" />
 
             <com.yz.dl.integralmanage.view.SlideUnlockView
                 android:id="@+id/slideunlock"
@@ -94,7 +94,7 @@
                 android:layout_margin="@dimen/most_use_paddingNine"
                 android:layout_toLeftOf="@+id/image"
                 android:background="@drawable/slide_bg"
-                app:lock_drawable="@drawable/slide"
+                app:lock_drawable="@mipmap/slide"
                 app:lock_radius="30dp"
                 app:lock_tips_tx="按住左边滑块，拖动解锁"
                 app:lock_tips_tx_color="@color/color_slide_text"

@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_network_error" />
+            android:src="@mipmap/ic_network_error" />
 
         <TextView
             android:id="@+id/base_fragment_loadfail_tv"
