@@ -18,6 +18,7 @@ import com.yz.dl.integralmanage.view.SpinnerLoader;
 import butterknife.ButterKnife;
 
 /**
+ * Fragment 基类
  * Created by I'M CHAMAN on 2017/9/26.
  */
 

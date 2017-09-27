@@ -62,6 +62,9 @@
     <string name="str_residue_point">可兑换积分</string>
     <string name="str_changed_point">已兑换积分</string>
     <string name="str_moneyof_goods">已兑换商品价值</string>
+    <string name="str_dayof_point">已兑换假期天数</string>
+    <string name="str_moneyof_award">积分奖励金额</string>
+    <string name="str_dayof_award">积分奖励天数</string>
 
 
 

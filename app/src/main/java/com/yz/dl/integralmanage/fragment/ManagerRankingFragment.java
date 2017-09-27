@@ -1,15 +1,19 @@
 package com.yz.dl.integralmanage.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.yz.dl.integralmanage.R;
+import com.yz.dl.integralmanage.adapter.RankingAdapter;
 import com.yz.dl.integralmanage.base.BaseFragment;
-import com.yz.dl.integralmanage.ui.IntegralSearchIndividual;
+import com.yz.dl.integralmanage.bean.RankingBean;
+import com.yz.dl.integralmanage.view.ListViewForScrollView;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -20,12 +24,26 @@ import butterknife.OnClick;
  */
 
 public class ManagerRankingFragment extends BaseFragment {
-    @Bind(R.id.manager_name)
-    TextView managerName;
+    @Bind(R.id.ranking_list)
+    ListViewForScrollView managerName;
+
+    ArrayList<RankingBean> list;
+    RankingAdapter adapter;
 
     @Override
     protected void TODO(View view, Bundle savedInstanceState) {
-
+        list = new ArrayList<>();
+        for (int i = 1; i < 5; i++) {
+            RankingBean rankingBean = new RankingBean();
+            rankingBean.setArea("成都");
+            rankingBean.setNum(i);
+            rankingBean.setGas("南苑" + i);
+            rankingBean.setName("张强" + i);
+            rankingBean.setTotal((90 - i) + " ");
+            list.add(rankingBean);
+        }
+        adapter = new RankingAdapter(getActivity(), list);
+        managerName.setAdapter(adapter);
     }
 
     @Override
@@ -41,8 +59,24 @@ public class ManagerRankingFragment extends BaseFragment {
         ButterKnife.unbind(this);
     }
 
-    @OnClick(R.id.manager_name)
+    private void sortInfo() {
+        Comparator<RankingBean> itemComparator = new Comparator<RankingBean>() {
+            public int compare(RankingBean info1, RankingBean info2) {
+                return info1.getTotal().compareTo(info2.getTotal());
+            }
+        };
+        Collections.sort(list, itemComparator);
+    }
+
+    private void refreshAdapter() {
+        sortInfo();
+//        managerName.setAdapter(new RankingAdapter(getActivity(), list));
+        adapter.notifyDataSetChanged();
+    }
+
+
+    @OnClick(R.id.rangking_click)
     public void onViewClicked() {
-        startActivity(new Intent(getActivity(), IntegralSearchIndividual.class));
+        refreshAdapter();
     }
 }

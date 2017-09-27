@@ -1,62 +1,65 @@
 package com.yz.dl.integralmanage.adapter;
 
-import android.database.DataSetObserver;
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
+import android.widget.TextView;
+
+import com.yz.dl.integralmanage.R;
+import com.yz.dl.integralmanage.base.IntrgralBaseAdapter;
+import com.yz.dl.integralmanage.bean.RankingBean;
+import com.yz.dl.integralmanage.utils.InrgralHashMap;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by I'M CHAMAN on 2017/9/27.
  */
 
-public class RankingAdapter implements Adapter {
-    @Override
-    public void registerDataSetObserver(DataSetObserver dataSetObserver) {
+public class RankingAdapter extends IntrgralBaseAdapter {
 
+    public RankingAdapter(Context context, List data) {
+        super(context, data);
     }
 
     @Override
-    public void unregisterDataSetObserver(DataSetObserver dataSetObserver) {
-
+    public View getView(int position, View view, ViewGroup viewGroup) {
+        ViewHolder viewHolder;
+        if (view == null) {
+            view = getInflater().inflate(R.layout.item_ranking, null);
+            viewHolder = new ViewHolder(view);
+            view.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolder) view.getTag();
+        }
+        RankingBean rankingBean = (RankingBean) getData().get(position);
+        viewHolder.itemRangkingNum.setText(rankingBean.getNum()+"");
+        viewHolder.itemRangkingName.setText(rankingBean.getName());
+        viewHolder.itemRangkingArea.setText(rankingBean.getArea());
+        viewHolder.itemRangkingGas.setText(rankingBean.getGas());
+        viewHolder.itemRangkingTotal.setText(rankingBean.getTotal());
+        return view;
     }
 
-    @Override
-    public int getCount() {
-        return 0;
-    }
+    static class ViewHolder {
+        @Bind(R.id.item_rangking_num)
+        TextView itemRangkingNum;
+        @Bind(R.id.item_rangking_name)
+        TextView itemRangkingName;
+        @Bind(R.id.item_rangking_area)
+        TextView itemRangkingArea;
+        @Bind(R.id.item_rangking_gas)
+        TextView itemRangkingGas;
+        @Bind(R.id.item_rangking_total)
+        TextView itemRangkingTotal;
 
-    @Override
-    public Object getItem(int i) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return 0;
-    }
-
-    @Override
-    public boolean hasStableIds() {
-        return false;
-    }
-
-    @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
-    }
-
-    @Override
-    public int getItemViewType(int i) {
-        return 0;
-    }
-
-    @Override
-    public int getViewTypeCount() {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
+        ViewHolder(View view) {
+            ButterKnife.bind(this, view);
+        }
     }
 }

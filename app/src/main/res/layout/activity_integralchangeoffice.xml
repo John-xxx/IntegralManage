@@ -35,7 +35,8 @@
         android:layout_marginBottom="@dimen/most_use_paddingFifteen"
         android:layout_marginLeft="@dimen/most_use_paddingFifteen"
         android:layout_marginRight="@dimen/most_use_paddingFifteen"
-        android:background="@drawable/scrollview_bg">
+        android:background="@drawable/scrollview_bg"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -216,7 +217,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/most_use_paddingNine"
-                            android:drawableTop="@mipmap/ico_residue_point"
+                            android:drawableTop="@mipmap/ico_changed_money"
                             android:gravity="center"
                             android:text="@string/str_moneyof_goods"
                             android:textColor="@color/color_title_bg"
@@ -263,9 +264,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/most_use_paddingNine"
-                            android:drawableTop="@mipmap/ico_changed_point"
+                            android:drawableTop="@mipmap/ico_changed_day"
                             android:gravity="center"
-                            android:text="@string/str_changed_point"
+                            android:text="@string/str_dayof_point"
                             android:textColor="@color/color_title_bg"
                             android:textSize="@dimen/main_position_size" />
 
@@ -287,7 +288,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
-                                android:text="(分)"
+                                android:text="(天)"
                                 android:textColor="@color/color_integral_person"
                                 android:textSize="@dimen/main_position_size" />
                         </LinearLayout>
@@ -315,9 +316,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/most_use_paddingNine"
-                            android:drawableTop="@mipmap/ico_residue_point"
+                            android:drawableTop="@mipmap/ico_changed_money"
                             android:gravity="center"
-                            android:text="@string/str_residue_point"
+                            android:text="@string/str_moneyof_award"
                             android:textColor="@color/color_title_bg"
                             android:textSize="@dimen/main_position_size" />
 
@@ -361,9 +362,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/most_use_paddingNine"
-                            android:drawableTop="@mipmap/ico_changed_point"
+                            android:drawableTop="@mipmap/ico_changed_day"
                             android:gravity="center"
-                            android:text="@string/str_changed_point"
+                            android:text="@string/str_dayof_award"
                             android:textColor="@color/color_title_bg"
                             android:textSize="@dimen/main_position_size" />
 
