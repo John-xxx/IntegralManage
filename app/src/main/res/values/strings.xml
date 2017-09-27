@@ -48,6 +48,8 @@
 
 
     <string name="managerchecked">站经理打分</string>
+    <string name="inspectorchecked">稽查员打分</string>
+    <string name="str_2office">二级公司</string>
     <string name="str_checked_time">时间</string>
     <string name="str_addpoint_item">加分指标</string>
     <string name="str_subpoint_item">减分指标</string>

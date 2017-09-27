@@ -10,6 +10,7 @@
     <dimen name="most_use_paddingFifteen">15dp</dimen>
     <dimen name="most_use_paddingEighteen">18dp</dimen>
     <dimen name="most_use_paddingThirty">30dp</dimen>
+    <dimen name="most_use_paddingFourty">40dp</dimen>
 
 
     <dimen name="dimen_login_logo">20dp</dimen>

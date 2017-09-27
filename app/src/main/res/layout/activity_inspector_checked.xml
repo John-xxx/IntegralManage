@@ -14,7 +14,7 @@
         android:paddingTop="@dimen/most_use_paddingEighteen">
 
         <ImageView
-            android:id="@+id/managerchecked_back"
+            android:id="@+id/inspectorchecked_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@mipmap/back_" />
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/managerchecked"
+            android:text="@string/inspectorchecked"
             android:textColor="@color/white"
             android:textSize="@dimen/logo_text_size" />
 
@@ -49,6 +49,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:text="@string/str_2office"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:drawableRight="@mipmap/pushslide"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="成都"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
                 android:text="@string/str_text_area"
                 android:textColor="@color/black"
                 android:textSize="@dimen/main_position_size" />
