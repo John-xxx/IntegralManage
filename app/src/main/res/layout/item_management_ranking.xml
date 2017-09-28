@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_managementrangking_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/most_use_paddingFive"
+        android:paddingTop="@dimen/most_use_paddingFive"
+        android:textColor="@color/color_title_bg"
+        android:textSize="@dimen/logo_text_size"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/item_managementrangking_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/most_use_paddingFive"
+        android:paddingTop="@dimen/most_use_paddingFive"
+        android:textColor="@color/color_title_bg"
+        android:textSize="@dimen/logo_text_size"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/item_managementrangking_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/most_use_paddingFive"
+        android:paddingTop="@dimen/most_use_paddingFive"
+        android:textColor="@color/color_title_bg"
+        android:textSize="@dimen/logo_text_size"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/item_managementrangking_gas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/most_use_paddingFive"
+        android:paddingTop="@dimen/most_use_paddingFive"
+        android:textColor="@color/color_title_bg"
+        android:textSize="@dimen/logo_text_size"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/item_managementrangking_total"
+        android:layout_width="0dp"
+        android:paddingBottom="@dimen/most_use_paddingFive"
+        android:paddingTop="@dimen/most_use_paddingFive"
+        android:textColor="@color/color_title_bg"
+        android:textSize="@dimen/logo_text_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+
+</LinearLayout>

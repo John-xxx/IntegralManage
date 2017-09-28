@@ -4,9 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.yz.dl.integralmanage.R;
-import com.yz.dl.integralmanage.adapter.RankingAdapter;
+import com.yz.dl.integralmanage.adapter.ManagerRankingAdapter;
 import com.yz.dl.integralmanage.base.BaseFragment;
 import com.yz.dl.integralmanage.bean.RankingBean;
 import com.yz.dl.integralmanage.view.ListViewForScrollView;
@@ -24,11 +25,13 @@ import butterknife.OnClick;
  */
 
 public class ManagerRankingFragment extends BaseFragment {
-    @Bind(R.id.ranking_list)
+    @Bind(R.id.manager_ranking_list)
     ListViewForScrollView managerName;
-
+    @Bind(R.id.manager_rangking_click)
+    TextView managerRankingClick;
     ArrayList<RankingBean> list;
-    RankingAdapter adapter;
+    ManagerRankingAdapter adapter;
+    private boolean isSort = false;
 
     @Override
     protected void TODO(View view, Bundle savedInstanceState) {
@@ -42,7 +45,7 @@ public class ManagerRankingFragment extends BaseFragment {
             rankingBean.setTotal((90 - i) + " ");
             list.add(rankingBean);
         }
-        adapter = new RankingAdapter(getActivity(), list);
+        adapter = new ManagerRankingAdapter(getActivity(), list);
         managerName.setAdapter(adapter);
     }
 
@@ -60,11 +63,22 @@ public class ManagerRankingFragment extends BaseFragment {
     }
 
     private void sortInfo() {
-        Comparator<RankingBean> itemComparator = new Comparator<RankingBean>() {
-            public int compare(RankingBean info1, RankingBean info2) {
-                return info1.getTotal().compareTo(info2.getTotal());
-            }
-        };
+        Comparator<RankingBean> itemComparator = null;
+        if (!isSort) {
+            itemComparator = new Comparator<RankingBean>() {
+                public int compare(RankingBean info1, RankingBean info2) {
+                    return info1.getTotal().compareTo(info2.getTotal());
+                }
+            };
+            isSort = true;
+        } else {
+            itemComparator = new Comparator<RankingBean>() {
+                public int compare(RankingBean info1, RankingBean info2) {
+                    return info2.getTotal().compareTo(info1.getTotal());
+                }
+            };
+            isSort = false;
+        }
         Collections.sort(list, itemComparator);
     }
 
@@ -75,7 +89,7 @@ public class ManagerRankingFragment extends BaseFragment {
     }
 
 
-    @OnClick(R.id.rangking_click)
+    @OnClick(R.id.manager_rangking_click)
     public void onViewClicked() {
         refreshAdapter();
     }

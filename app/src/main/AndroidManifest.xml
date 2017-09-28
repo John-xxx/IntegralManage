@@ -43,10 +43,6 @@
             android:launchMode="singleTask" />
 
         <activity
-            android:name=".ui.HistoryIntegral"
-            android:launchMode="singleTask" />
-
-        <activity
             android:name=".ui.InspectorChecked"
             android:launchMode="singleTask" />
 

@@ -33,6 +33,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/operator_ranking_click"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -92,210 +93,212 @@
             </LinearLayout>
 
 
-            <!--<com.yz.dl.integralmanage.view.ListViewForScrollView-->
-                <!--android:id="@+id/ranking_list"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent" />-->
-
-
-            <TableLayout
+            <com.yz.dl.integralmanage.view.ListViewForScrollView
+                android:id="@+id/operator_ranking_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/most_use_paddingFifteen"
-                android:background="@drawable/scrollview_bg"
-                android:divider="@color/most_bg_color"
-                android:showDividers="end">
+                android:divider="@null"
+                android:layout_marginTop="@dimen/most_use_paddingNine" />
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/stationManager"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="1"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+            <!--<TableLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="@dimen/most_use_paddingFifteen"-->
+                <!--android:background="@drawable/scrollview_bg"-->
+                <!--android:divider="@color/most_bg_color"-->
+                <!--android:showDividers="end">-->
 
-                    <TextView
-                        android:id="@+id/stationManager_num"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="张政"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                <!--<TableRow-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
 
-                    <TextView
-                        android:id="@+id/stationManager_avg"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="成都"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/stationManager"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="1"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="神龙山"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/stationManager_num"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="张政"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="90"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
-                </TableRow>
+                    <!--<TextView-->
+                        <!--android:id="@+id/stationManager_avg"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="成都"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="神龙山"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:id="@+id/management"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="2"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="90"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
+                <!--</TableRow>-->
 
-                    <TextView
-                        android:id="@+id/management_num"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="陈胜"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                <!--<TableRow-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
 
-                    <TextView
-                        android:id="@+id/management_avg"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="眉山"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/management"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="2"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="蒋家冲"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/management_num"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="陈胜"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="85"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
-                </TableRow>
+                    <!--<TextView-->
+                        <!--android:id="@+id/management_avg"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="眉山"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="蒋家冲"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:id="@+id/operator"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="3"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="85"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
+                <!--</TableRow>-->
 
-                    <TextView
-                        android:id="@+id/operator_num"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="吴广"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                <!--<TableRow-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
 
-                    <TextView
-                        android:id="@+id/operator_avg"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="广元"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/operator"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="3"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="刘家坳"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/operator_num"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="吴广"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:paddingBottom="@dimen/most_use_paddingFive"
-                        android:paddingTop="@dimen/most_use_paddingFive"
-                        android:text="82"
-                        android:textColor="@color/color_title_bg"
-                        android:textSize="@dimen/logo_text_size" />
-                </TableRow>
+                    <!--<TextView-->
+                        <!--android:id="@+id/operator_avg"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="广元"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
 
-            </TableLayout>
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="刘家坳"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="@dimen/most_use_paddingFive"-->
+                        <!--android:paddingTop="@dimen/most_use_paddingFive"-->
+                        <!--android:text="82"-->
+                        <!--android:textColor="@color/color_title_bg"-->
+                        <!--android:textSize="@dimen/logo_text_size" />-->
+                <!--</TableRow>-->
+
+            <!--</TableLayout>-->
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

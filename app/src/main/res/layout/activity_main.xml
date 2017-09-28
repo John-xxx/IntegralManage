@@ -8,10 +8,37 @@
     android:orientation="vertical"
     tools:context="com.yz.dl.integralmanage.ui.Login">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/main_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/exit_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/homepage"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_tweentyFour" />
+
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="11"
         android:background="@drawable/show_view"
         android:gravity="center"
         android:orientation="vertical">
@@ -21,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/logo" />
 
         <TextView
             android:layout_width="match_parent"
@@ -32,13 +59,14 @@
             android:text="@string/default_name"
             android:textColor="@color/white"
             android:textSize="@dimen/logo_text_size" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/default_position"
             android:textColor="@color/color_position"
-            android:textSize="@dimen/main_position_size"/>
+            android:textSize="@dimen/main_position_size" />
 
     </LinearLayout>
 
@@ -47,10 +75,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/most_use_paddingTen"
-        android:layout_weight="2"
+        android:layout_weight="19"
+        android:orientation="vertical"
         android:paddingLeft="@dimen/dimen_login_margin"
-        android:paddingRight="@dimen/dimen_login_margin"
-        android:orientation="vertical">
+        android:paddingRight="@dimen/dimen_login_margin">
 
 
         <LinearLayout
@@ -78,13 +106,13 @@
                 android:id="@+id/main_checkPoint"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/most_use_paddingNine"
+                android:layout_marginRight="@dimen/most_use_paddingNine"
                 android:layout_weight="1"
                 android:background="@drawable/selector_textview"
                 android:clickable="true"
                 android:drawablePadding="@dimen/most_use_paddingSix"
                 android:drawableTop="@mipmap/check_point"
-                android:layout_marginLeft="@dimen/most_use_paddingNine"
-                android:layout_marginRight="@dimen/most_use_paddingNine"
                 android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingNine"
                 android:paddingTop="@dimen/most_use_paddingEighteen"
@@ -136,12 +164,12 @@
                 android:id="@+id/push_message"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/most_use_paddingNine"
+                android:layout_marginRight="@dimen/most_use_paddingNine"
                 android:layout_weight="1"
                 android:background="@drawable/selector_textview"
                 android:clickable="true"
                 android:drawablePadding="@dimen/most_use_paddingSix"
-                android:layout_marginLeft="@dimen/most_use_paddingNine"
-                android:layout_marginRight="@dimen/most_use_paddingNine"
                 android:drawableTop="@mipmap/push_message"
                 android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingNine"
@@ -149,10 +177,11 @@
                 android:text="@string/str_mesage"
                 android:textColor="@color/color_main_text"
                 android:textSize="@dimen/main_position_size" />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
 
         </LinearLayout>

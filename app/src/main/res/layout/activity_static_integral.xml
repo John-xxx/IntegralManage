@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/static_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_text_staticpoint"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/most_use_paddingFifteen"
+            android:paddingRight="@dimen/most_use_paddingEighteen"
+            android:paddingLeft="@dimen/most_use_paddingEighteen"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_view"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/static_icoedu_image"
+                    android:layout_width="@dimen/most_use_paddingSixty"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ico_edu"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <TextView
+                    android:id="@+id/static_eduintegral_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/most_use_paddingTen"
+                    android:text="6"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="@dimen/textsize_tweentyFour"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/static_eduintegral_num"
+                    android:layout_toRightOf="@id/static_icoedu_image"
+                    android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+                    android:layout_marginRight="@dimen/most_use_paddingFifteen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="@dimen/logo_text_size"/>
+
+                    <TextView
+                        android:id="@+id/static_edu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/most_use_paddingTen"
+                        android:text="大专"
+                        android:textSize="@dimen/main_position_size"
+                        android:textColor="@color/color_hint_text"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_view"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/static_icojob_image"
+                    android:layout_width="@dimen/most_use_paddingSixty"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ico_jobtitle"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <TextView
+                    android:id="@+id/static_jobintegral_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/most_use_paddingTen"
+                    android:text="6"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="@dimen/textsize_tweentyFour"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/static_jobintegral_num"
+                    android:layout_toRightOf="@id/static_icojob_image"
+                    android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+                    android:layout_marginRight="@dimen/most_use_paddingFifteen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="@dimen/logo_text_size"/>
+
+                    <TextView
+                        android:id="@+id/static_jobtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/most_use_paddingTen"
+                        android:text="大专"
+                        android:textSize="@dimen/main_position_size"
+                        android:textColor="@color/color_hint_text"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_view"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/static_icoworkage_image"
+                    android:layout_width="@dimen/most_use_paddingSixty"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ico_workage"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <TextView
+                    android:id="@+id/static_workageintegral_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/most_use_paddingTen"
+                    android:text="6"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="@dimen/textsize_tweentyFour"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/static_workageintegral_num"
+                    android:layout_toRightOf="@id/static_icoworkage_image"
+                    android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+                    android:layout_marginRight="@dimen/most_use_paddingFifteen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="@dimen/logo_text_size"/>
+
+                    <TextView
+                        android:id="@+id/static_workage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/most_use_paddingTen"
+                        android:text="11-15年"
+                        android:textSize="@dimen/main_position_size"
+                        android:textColor="@color/color_hint_text"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_view"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/static_icolevel_image"
+                    android:layout_width="@dimen/most_use_paddingSixty"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ico_level"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <TextView
+                    android:id="@+id/static_levelintegral_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/most_use_paddingTen"
+                    android:text="6"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="@dimen/textsize_tweentyFour"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/static_levelintegral_num"
+                    android:layout_toRightOf="@id/static_icolevel_image"
+                    android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+                    android:layout_marginRight="@dimen/most_use_paddingFifteen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="@dimen/logo_text_size"/>
+
+                    <TextView
+                        android:id="@+id/static_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/most_use_paddingTen"
+                        android:text="中级工"
+                        android:textSize="@dimen/main_position_size"
+                        android:textColor="@color/color_hint_text"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_view"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/static_icostation_image"
+                    android:layout_width="@dimen/most_use_paddingSixty"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ico_station"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <TextView
+                    android:id="@+id/static_stationintegral_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/most_use_paddingTen"
+                    android:text="6"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="@dimen/textsize_tweentyFour"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/static_stationintegral_num"
+                    android:layout_toRightOf="@id/static_icostation_image"
+                    android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+                    android:layout_marginRight="@dimen/most_use_paddingFifteen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="@dimen/logo_text_size"/>
+
+                    <TextView
+                        android:id="@+id/static_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/most_use_paddingTen"
+                        android:text="站经理"
+                        android:textSize="@dimen/main_position_size"
+                        android:textColor="@color/color_hint_text"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -60,9 +60,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
+                    android:background="@drawable/button_bg"
                     android:drawableLeft="@mipmap/ico_location"
                     android:drawablePadding="@dimen/most_use_paddingFive"
                     android:drawableRight="@mipmap/pushslide"
+                    android:paddingBottom="@dimen/most_use_paddingFive"
+                    android:paddingLeft="@dimen/most_use_paddingTen"
+                    android:paddingRight="@dimen/most_use_paddingTen"
+                    android:paddingTop="@dimen/most_use_paddingFive"
                     android:text="@string/str_default_office"
                     android:textColor="@color/color_title_bg"
                     android:textSize="@dimen/logo_text_size" />
@@ -75,8 +80,10 @@
                     android:background="@drawable/button_bg"
                     android:drawablePadding="@dimen/most_use_paddingFive"
                     android:drawableRight="@mipmap/pushslide"
-                    android:paddingLeft="@dimen/most_use_paddingFive"
-                    android:paddingRight="@dimen/most_use_paddingFive"
+                    android:paddingBottom="@dimen/most_use_paddingFive"
+                    android:paddingLeft="@dimen/most_use_paddingTen"
+                    android:paddingRight="@dimen/most_use_paddingTen"
+                    android:paddingTop="@dimen/most_use_paddingFive"
                     android:text="@string/str_default_month"
                     android:textColor="@color/color_title_bg"
                     android:textSize="@dimen/logo_text_size" />
@@ -90,8 +97,10 @@
                     android:background="@drawable/button_bg"
                     android:drawablePadding="@dimen/most_use_paddingFive"
                     android:drawableRight="@mipmap/pushslide"
-                    android:paddingLeft="@dimen/most_use_paddingFive"
-                    android:paddingRight="@dimen/most_use_paddingFive"
+                    android:paddingBottom="@dimen/most_use_paddingFive"
+                    android:paddingLeft="@dimen/most_use_paddingTen"
+                    android:paddingRight="@dimen/most_use_paddingTen"
+                    android:paddingTop="@dimen/most_use_paddingFive"
                     android:text="@string/str_default_date"
                     android:textColor="@color/color_title_bg"
                     android:textSize="@dimen/logo_text_size" />
@@ -115,9 +124,9 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/scrollview_bg"
-                        android:gravity="center"
                         android:orientation="vertical"
                         android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingLeft="@dimen/textsize_tweentyFour"
                         android:paddingTop="@dimen/most_use_paddingNine">
 
                         <TextView
@@ -125,7 +134,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/str_text_total_station"
-                            android:textColor="@color/color_title_bg"
+                            android:textColor="@color/black"
                             android:textSize="@dimen/main_position_size" />
 
                         <TextView
@@ -134,7 +143,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/most_use_paddingFive"
                             android:text="162"
-                            android:textColor="@color/color_title_bg"
+                            android:textColor="@color/color_hint_text"
                             android:textSize="@dimen/logo_text_size" />
                     </LinearLayout>
 
@@ -143,16 +152,16 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/scrollview_bg"
-                        android:gravity="center"
                         android:orientation="vertical"
                         android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingLeft="@dimen/textsize_tweentyFour"
                         android:paddingTop="@dimen/most_use_paddingNine">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/str_text_total_person"
-                            android:textColor="@color/color_title_bg"
+                            android:textColor="@color/black"
                             android:textSize="@dimen/main_position_size" />
 
                         <TextView
@@ -161,7 +170,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/most_use_paddingFive"
                             android:text="1620"
-                            android:textColor="@color/color_title_bg"
+                            android:textColor="@color/color_hint_text"
                             android:textSize="@dimen/logo_text_size" />
                     </LinearLayout>
                 </TableRow>
@@ -173,7 +182,13 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingFifteen"
+                        android:paddingTop="@dimen/most_use_paddingFifteen"
+                        android:text="职位"
+                        android:textColor="@color/color_hint_text"
+                        android:textSize="@dimen/logo_text_size" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -183,7 +198,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="人数"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -194,9 +209,14 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="平均分"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
                 </TableRow>
 
                 <TableRow
@@ -204,7 +224,6 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/stationManager"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -212,7 +231,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="@string/str_text_stationManager"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -224,7 +243,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="21"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -236,7 +255,20 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="90"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/stationManager"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine"
+                        android:background="@color/color_title_bg"
+                        android:text="查看"
+                        android:textColor="@color/white"
                         android:textSize="@dimen/logo_text_size" />
                 </TableRow>
 
@@ -245,7 +277,6 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/management"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -253,7 +284,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="@string/str_text_management"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -265,7 +296,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="19"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -277,8 +308,21 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="89"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/management"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine"
+                        android:background="@color/color_title_bg"
+                        android:text="查看"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/logo_text_size"  />
                 </TableRow>
 
                 <TableRow
@@ -286,7 +330,6 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/operator"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -294,7 +337,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="@string/str_text_operator"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -306,7 +349,7 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="20"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
                         android:textSize="@dimen/logo_text_size" />
 
                     <TextView
@@ -318,7 +361,20 @@
                         android:paddingBottom="@dimen/most_use_paddingFifteen"
                         android:paddingTop="@dimen/most_use_paddingFifteen"
                         android:text="88"
-                        android:textColor="@color/color_title_bg"
+                        android:textColor="@color/color_hint_text"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/operator"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine"
+                        android:background="@color/color_title_bg"
+                        android:text="查看"
+                        android:textColor="@color/white"
                         android:textSize="@dimen/logo_text_size" />
                 </TableRow>
 

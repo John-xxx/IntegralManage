@@ -6,6 +6,7 @@
     <string name="exit">退出</string>
     <string name="forgetpassword">忘记密码？</string>
 
+    <string name="homepage">首页</string>
 
     <string name="hint_idcard">身份证号</string>
     <string name="hint_password">密码</string>
@@ -23,6 +24,7 @@
     <string name="str_default_date">2017年</string>
     <string name="str_default_month">7月</string>
     <string name="str_history_integral">历史积分</string>
+    <string name="str_present_integral">当前积分</string>
 
     <string name="str_text_total_station">总站数</string>
     <string name="str_text_total_person">总人数</string>

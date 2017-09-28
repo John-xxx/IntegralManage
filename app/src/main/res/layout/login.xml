@@ -96,20 +96,20 @@
                 android:background="@drawable/slide_bg"
                 app:lock_drawable="@mipmap/slide"
                 app:lock_radius="30dp"
-                app:lock_tips_tx="按住左边滑块，拖动解锁"
+                app:lock_tips_tx="按住左边滑块，滑动登录"
                 app:lock_tips_tx_color="@color/color_slide_text"
                 app:locl_tips_tx_size="12sp" />
 
         </RelativeLayout>
 
-        <Button
-            android:id="@+id/login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_bg"
-            android:text="@string/login"
-            android:textColor="@color/color_hint_text"
-            android:textSize="@dimen/logo_text_size" />
+        <!--<Button-->
+            <!--android:id="@+id/login"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/button_bg"-->
+            <!--android:text="@string/login"-->
+            <!--android:textColor="@color/color_hint_text"-->
+            <!--android:textSize="@dimen/logo_text_size" />-->
 
 
         <Button
@@ -118,19 +118,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/most_use_paddingFifteen"
             android:background="@drawable/button_bg"
+            android:gravity="center"
             android:text="@string/exit"
             android:textColor="@color/color_hint_text"
             android:textSize="@dimen/logo_text_size" />
 
-        <TextView
-            android:id="@+id/forget_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/forgetpassword"
-            android:textColor="@color/color_hint_text"
-            android:layout_marginTop="@dimen/most_use_paddingFifteen"
-            android:textSize="@dimen/main_position_size" />
+        <!--<TextView-->
+            <!--android:id="@+id/forget_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/forgetpassword"-->
+            <!--android:textColor="@color/color_hint_text"-->
+            <!--android:layout_marginTop="@dimen/most_use_paddingFifteen"-->
+            <!--android:textSize="@dimen/main_position_size" />-->
 
     </LinearLayout>
 

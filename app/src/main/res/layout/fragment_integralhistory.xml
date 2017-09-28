@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+        android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+        android:layout_marginRight="@dimen/most_use_paddingFifteen"
+        android:layout_marginTop="@dimen/most_use_paddingEighteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingNine"
+            android:paddingTop="@dimen/most_use_paddingNine">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scrollview_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/most_use_paddingNine"
+                    android:layout_marginLeft="@dimen/most_use_paddingNine"
+                    android:layout_marginRight="@dimen/most_use_paddingNine"
+                    android:layout_marginTop="@dimen/most_use_paddingNine"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/person_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/button_bg"
+                        android:drawableLeft="@mipmap/ico_person"
+                        android:drawablePadding="@dimen/most_use_paddingFive"
+                        android:drawableRight="@mipmap/pushslide"
+                        android:paddingBottom="@dimen/most_use_paddingFive"
+                        android:paddingLeft="@dimen/most_use_paddingNine"
+                        android:paddingRight="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingFive"
+                        android:text="@string/str_default_name"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/person_month_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_bg"
+                        android:drawablePadding="@dimen/most_use_paddingFive"
+                        android:drawableRight="@mipmap/pushslide"
+                        android:paddingLeft="@dimen/most_use_paddingFive"
+                        android:paddingRight="@dimen/most_use_paddingFive"
+                        android:text="@string/str_default_month"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                    <TextView
+                        android:id="@+id/person_date_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/most_use_paddingFive"
+                        android:layout_toLeftOf="@id/person_month_select"
+                        android:background="@drawable/button_bg"
+                        android:drawablePadding="@dimen/most_use_paddingFive"
+                        android:drawableRight="@mipmap/pushslide"
+                        android:paddingLeft="@dimen/most_use_paddingFive"
+                        android:paddingRight="@dimen/most_use_paddingFive"
+                        android:text="@string/str_default_date"
+                        android:textColor="@color/color_title_bg"
+                        android:textSize="@dimen/logo_text_size" />
+
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                    android:background="@drawable/scrollview_bg"
+                    android:divider="@color/most_bg_color">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_area"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/person_area"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="成都"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_gas"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/person_gas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="神龙山"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_jobs"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/person_jobs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="站经理"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_totalpoint"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/person_totalpoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="98"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/static_point"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_staticpoint"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/person_staticpoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="60"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dynamics_point"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_dynamicspoint"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/person_dynamicspoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="38"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/integral_office_ranking_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_office_ranking"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/present_integral_office_ranking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="20"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/integral_area_ranking_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_area_ranking"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/present_integral_area_ranking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="10"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/integral_gas_ranking_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/scrollview_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/most_use_paddingNine"
+                            android:paddingTop="@dimen/most_use_paddingNine">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_text_gas_ranking"
+                                android:textColor="@color/color_title_bg"
+                                android:textSize="@dimen/main_position_size" />
+
+                            <TextView
+                                android:id="@+id/present_integral_gas_ranking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="20"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/logo_text_size" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

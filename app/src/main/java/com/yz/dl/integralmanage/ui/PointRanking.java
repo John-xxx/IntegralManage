@@ -55,7 +55,7 @@ public class PointRanking extends FragmentActivity {
         adapter = new RankingFragmentAdapter(getSupportFragmentManager());
         rankingViewpager.setAdapter(adapter);
         rankingViewpager.setOffscreenPageLimit(3);
-        rankingViewpager.setScrollEnable(false);
+        rankingViewpager.setScrollEnable(true);
         rankingViewpager.setCurrentItem(display, false);
     }
 

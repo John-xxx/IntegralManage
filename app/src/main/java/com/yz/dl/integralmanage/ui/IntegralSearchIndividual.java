@@ -1,14 +1,16 @@
 package com.yz.dl.integralmanage.ui;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
-import android.view.Window;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.ImageView;
+import android.widget.RadioButton;
 
 import com.yz.dl.integralmanage.R;
+import com.yz.dl.integralmanage.adapter.IntegralSearchFragmentAdapter;
+import com.yz.dl.integralmanage.comm.Constants;
+import com.yz.dl.integralmanage.view.BanSlideViewPager;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -18,36 +20,43 @@ import butterknife.OnClick;
  * Created by I'M CHAMAN on 2017/9/26.
  */
 
-public class IntegralSearchIndividual extends Activity {
-    @Bind(R.id.history_integral)
-    TextView historyIntegral;
-    @Bind(R.id.static_point)
-    LinearLayout staticPoint;
-    @Bind(R.id.dynamics_point)
-    LinearLayout dynamicsPoint;
+public class IntegralSearchIndividual extends FragmentActivity {
+
+    @Bind(R.id.integralsearch_back)
+    ImageView integralsearchBack;
+    @Bind(R.id.integral_tab_present)
+    RadioButton integralTabPresent;
+    @Bind(R.id.integral_tab_history)
+    RadioButton integralTabHistory;
+    @Bind(R.id.integralsearch_viewpager)
+    BanSlideViewPager integralsearchViewpager;
+
+    IntegralSearchFragmentAdapter adapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_integralsearchindividual);
         ButterKnife.bind(this);
+        adapter = new IntegralSearchFragmentAdapter(getSupportFragmentManager());
+        integralsearchViewpager.setAdapter(adapter);
+        integralsearchViewpager.setOffscreenPageLimit(2);
+        integralsearchViewpager.setScrollEnable(true);
+        integralsearchViewpager.setCurrentItem(Constants.TAB_PRESENT, false);
     }
 
-    @OnClick({R.id.static_point, R.id.dynamics_point,R.id.history_integral})
+    @OnClick({R.id.integralsearch_back, R.id.integral_tab_present, R.id.integral_tab_history})
     public void onViewClicked(View view) {
-        Intent intent = new Intent();
         switch (view.getId()) {
-            case R.id.static_point:
-                intent.setClass(getApplicationContext(), StaticIntegral.class);
+            case R.id.integralsearch_back:
+                this.finish();
                 break;
-            case R.id.dynamics_point:
-                intent.setClass(getApplicationContext(), DynamicsIntegral.class);
+            case R.id.integral_tab_present:
+                integralsearchViewpager.setCurrentItem(Constants.TAB_PRESENT, false);
                 break;
-            case R.id.history_integral:
-                intent.setClass(getApplicationContext(), HistoryIntegral.class);
+            case R.id.integral_tab_history:
+                integralsearchViewpager.setCurrentItem(Constants.TAB_HISTORY, false);
                 break;
         }
-        startActivity(intent);
     }
 }
