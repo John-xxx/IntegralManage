@@ -19,4 +19,12 @@ public class Constants {
 
     public static final int ACTION_TAKE_PHOTO = 0x12;//拍照标识
 
+    public static final int TAB_GOODSCHANGE = 0;//商品兑换
+    public static final int TAB_VOCATIONCHANGE = 1;//假期兑换
+    public static final int TAB_INTEGRALAWARD = 2;//积分奖励
+
+
+    public static final int TAB_CHANGEDVOUCHAER = 0;//代金券奖励
+    public static final int TAB_CHANGEDVOCATION = 1;//假期数奖励
+
 }

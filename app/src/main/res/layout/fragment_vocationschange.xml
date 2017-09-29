@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:text="代金券"
+            android:text="假期"
             android:textColor="@color/color_hint_text"
             android:textSize="@dimen/text_size_tweenty" />
 

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.yz.dl.integralmanage.R;
 import com.yz.dl.integralmanage.base.BaseFragment;
 import com.yz.dl.integralmanage.ui.DynamicsIntegral;
+import com.yz.dl.integralmanage.ui.PointRanking;
 import com.yz.dl.integralmanage.ui.StaticIntegral;
 
 import butterknife.Bind;
@@ -91,10 +92,13 @@ public class IntegralPresentFragment extends BaseFragment {
                 startActivity(new Intent(getActivity(), DynamicsIntegral.class));
                 break;
             case R.id.integral_office_ranking_layout:
+                startActivity(new Intent(getActivity(), PointRanking.class));
                 break;
             case R.id.integral_area_ranking_layout:
+                startActivity(new Intent(getActivity(), PointRanking.class));
                 break;
             case R.id.integral_gas_ranking_layout:
+                startActivity(new Intent(getActivity(), PointRanking.class));
                 break;
         }
     }

@@ -1,6 +1,7 @@
 package com.yz.dl.integralmanage.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -15,6 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 机关单位积分汇总界面
  * Created by I'M CHAMAN on 2017/9/27.
  */
 
@@ -55,8 +57,10 @@ public class IntegralChangeOffice extends Activity {
             case R.id.changge_office_month_select:
                 break;
             case R.id.change_office_voucher:
+                startActivity(new Intent(getApplicationContext(),ChangeOfficeDetail.class));
                 break;
             case R.id.change_office_vocation:
+                startActivity(new Intent(getApplicationContext(),ChangeOfficeDetail.class));
                 break;
         }
     }

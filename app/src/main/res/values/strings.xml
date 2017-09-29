@@ -32,7 +32,7 @@
     <string name="str_text_stationManager">站经理</string>
     <string name="str_text_management">综管员</string>
     <string name="str_text_operator">加油员</string>
-    
+
     <string name="str_text_area">片区</string>
     <string name="str_text_gas">加油站</string>
     <string name="str_text_jobs">岗位</string>
@@ -42,12 +42,10 @@
     <string name="str_text_office_ranking">公司排名</string>
     <string name="str_text_area_ranking">区域排名</string>
     <string name="str_text_gas_ranking">加油站排名</string>
-
+    <string name="str_text_target">指标类别</string>
 
     <string name="str_ranking">排名</string>
     <string name="str_name">姓名</string>
-
-
 
 
     <string name="managerchecked">站经理打分</string>
@@ -61,7 +59,6 @@
     <string name="str_notice">*图片限制5张（1M/张）</string>
 
 
-
     <string name="str_total_change">兑换汇总</string>
     <string name="str_residue_point">可兑换积分</string>
     <string name="str_changed_point">已兑换积分</string>
@@ -72,13 +69,13 @@
     <string name="str_voucher_award">代金券奖励</string>
     <string name="str_vocation_award">假期数奖励</string>
     <string name="str_detail_award">奖励明细</string>
-
-
+    <string name="str_goods_changed">商品兑换</string>
+    <string name="str_vocation_changed">假期兑换</string>
+    <string name="str_integral_award">积分奖励</string>
 
 
     <string name="str_target_class">指标分类</string>
     <string name="str_target">指标</string>
-
 
 
     <string name="default_describe">5月20日参加省公司培训未签到</string>

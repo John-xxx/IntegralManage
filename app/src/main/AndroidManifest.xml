@@ -81,6 +81,9 @@
         <activity
             android:name=".ui.ChangeOfficeDetail"
             android:launchMode="singleTask" />
+
+        <activity android:name=".ui.FeedProblemSearch"
+            android:launchMode="singleTask"/>
     </application>
 
 </manifest>

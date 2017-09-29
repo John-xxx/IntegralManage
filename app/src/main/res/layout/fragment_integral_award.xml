@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/most_bg_color"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/most_use_paddingNine"
+            android:layout_weight="1"
             android:background="@drawable/blue_bg"
             android:gravity="center_horizontal"
             android:orientation="vertical"
@@ -41,11 +42,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
                 android:background="@drawable/shape_circle"
+                android:gravity="center"
                 android:paddingBottom="@dimen/most_use_paddingSix"
                 android:paddingLeft="@dimen/most_use_paddingFifteen"
                 android:paddingRight="@dimen/most_use_paddingFifteen"
                 android:paddingTop="@dimen/most_use_paddingSix"
-                android:gravity="center"
                 android:text="个人奖励明细"
                 android:textColor="@color/white"
                 android:textSize="@dimen/logo_text_size" />
@@ -53,9 +54,9 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/most_use_paddingNine"
+            android:layout_weight="1"
             android:background="@drawable/blue_bg"
             android:gravity="center_horizontal"
             android:orientation="vertical"
@@ -96,40 +97,52 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/color_hint_text"
-        android:background="@color/white"
         android:layout_marginTop="@dimen/most_use_paddingTen"
-        android:paddingTop="@dimen/most_use_paddingFive"
+        android:background="@color/white"
         android:paddingBottom="@dimen/most_use_paddingFive"
-        android:paddingRight="@dimen/most_use_paddingFifteen"
         android:paddingLeft="@dimen/most_use_paddingFifteen"
-        android:textSize="@dimen/main_position_size"
+        android:paddingRight="@dimen/most_use_paddingFifteen"
+        android:paddingTop="@dimen/most_use_paddingFive"
         android:singleLine="false"
         android:text="说明：员工年度动态积分在本岗位排名前50%的，可领取相应价值代金券或假期奖励。点击下方按钮领取。"
-        />
+        android:textColor="@color/color_hint_text"
+        android:textSize="@dimen/main_position_size" />
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:padding="@dimen/most_use_paddingFifteen"
-    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/most_use_paddingFifteen">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:background="@drawable/white_bg"
-        android:gravity="center"
-        android:text="领取代金券"/>
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:background="@drawable/white_bg"
-        android:layout_marginLeft="@dimen/most_use_paddingThirty"
-        android:gravity="center"
-        android:text="领取假期"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:drawableTop="@mipmap/ico_changed_money"
+            android:gravity="center"
+            android:paddingBottom="@dimen/most_use_paddingThirty"
+            android:paddingTop="@dimen/most_use_paddingThirty"
+            android:textColor="@color/color_title_bg"
+            android:textSize="@dimen/logo_text_size"
+            android:drawablePadding="@dimen/most_use_paddingTen"
+            android:text="领取代金券" />
 
-</LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/most_use_paddingThirty"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:drawableTop="@mipmap/ico_changed_day"
+            android:gravity="center"
+            android:paddingBottom="@dimen/most_use_paddingThirty"
+            android:paddingTop="@dimen/most_use_paddingThirty"
+            android:textColor="@color/color_title_bg"
+            android:drawablePadding="@dimen/most_use_paddingTen"
+            android:textSize="@dimen/logo_text_size"
+            android:text="领取假期" />
+
+    </LinearLayout>
 </LinearLayout>

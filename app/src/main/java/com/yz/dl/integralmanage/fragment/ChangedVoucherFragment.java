@@ -13,6 +13,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
+ * 代金券奖励Fragment
  * Created by I'M CHAMAN on 2017/9/29.
  */
 

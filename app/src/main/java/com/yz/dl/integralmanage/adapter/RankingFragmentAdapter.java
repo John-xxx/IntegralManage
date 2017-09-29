@@ -11,6 +11,7 @@ import com.yz.dl.integralmanage.fragment.ManagmentRankingFragment;
 import com.yz.dl.integralmanage.fragment.OperatorRankingFragment;
 
 /**
+ * 排名Fragment适配器
  * Created by I'M CHAMAN on 2017/9/26.
  */
 

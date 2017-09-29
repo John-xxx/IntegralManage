@@ -2,6 +2,7 @@ package com.yz.dl.integralmanage.ui;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
@@ -64,7 +65,7 @@ public class FeedProblemOffice extends Activity {
                 this.finish();
                 break;
             case R.id.feedback_office_search:
-
+                startActivity(new Intent(getApplicationContext(),FeedProblemSearch.class));
                 break;
         }
     }

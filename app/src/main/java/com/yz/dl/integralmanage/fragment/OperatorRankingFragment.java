@@ -1,15 +1,18 @@
 package com.yz.dl.integralmanage.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.yz.dl.integralmanage.R;
 import com.yz.dl.integralmanage.adapter.OperatorRankingAdapter;
 import com.yz.dl.integralmanage.base.BaseFragment;
 import com.yz.dl.integralmanage.bean.RankingBean;
+import com.yz.dl.integralmanage.ui.IntegralSearchIndividual;
 import com.yz.dl.integralmanage.view.ListViewForScrollView;
 
 import java.util.ArrayList;
@@ -22,6 +25,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 加油员排名Fragment
  * Created by I'M CHAMAN on 2017/9/26.
  */
 
@@ -51,6 +55,12 @@ public class OperatorRankingFragment extends BaseFragment {
 
         adapter = new OperatorRankingAdapter(getActivity(), list);
         operatorRankingList.setAdapter(adapter);
+        operatorRankingList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(getActivity(), IntegralSearchIndividual.class));
+            }
+        });
     }
 
     @Override

@@ -13,6 +13,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
+ * 假期奖励Fragment
  * Created by I'M CHAMAN on 2017/9/29.
  */
 
