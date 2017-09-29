@@ -9,6 +9,7 @@
     <dimen name="most_use_paddingTen">10dp</dimen>
     <dimen name="most_use_paddingFifteen">15dp</dimen>
     <dimen name="most_use_paddingEighteen">18dp</dimen>
+    <dimen name="most_use_paddingtwentyEight">28dp</dimen>
     <dimen name="most_use_paddingThirty">30dp</dimen>
     <dimen name="most_use_paddingFourty">40dp</dimen>
     <dimen name="most_use_paddingSixty">60dp</dimen>
@@ -23,4 +24,5 @@
     <dimen name="logo_text_size">18sp</dimen>
     <dimen name="textsize_tweentyFour">24sp</dimen>
     <dimen name="main_position_size">15sp</dimen>
+    <dimen name="textsize_tweenteen">12sp</dimen>
 </resources>

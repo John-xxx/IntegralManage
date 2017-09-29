@@ -52,7 +52,7 @@
 
                 <ImageView
                     android:id="@+id/dynamics_icoedu_image"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/most_use_paddingSixty"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:src="@mipmap/ico_sale"
@@ -110,10 +110,10 @@
 
                 <ImageView
                     android:id="@+id/dynamics_icojob_image"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/most_use_paddingSixty"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:src="@mipmap/ico_jobtitle"
+                    android:src="@mipmap/ico_offsale"
                     android:layout_alignParentLeft="true"/>
 
 
@@ -167,10 +167,10 @@
 
                 <ImageView
                     android:id="@+id/dynamics_icoworkage_image"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/most_use_paddingSixty"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:src="@mipmap/ico_workage"
+                    android:src="@mipmap/ico_competition"
                     android:layout_alignParentLeft="true"/>
 
 
@@ -224,10 +224,10 @@
 
                 <ImageView
                     android:id="@+id/dynamics_icolevel_image"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/most_use_paddingSixty"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:src="@mipmap/ico_level"
+                    android:src="@mipmap/ico_give"
                     android:layout_alignParentLeft="true"/>
 
 
@@ -281,10 +281,10 @@
 
                 <ImageView
                     android:id="@+id/dynamics_icostation_image"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/most_use_paddingSixty"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:src="@mipmap/ico_station"
+                    android:src="@mipmap/ico_study"
                     android:layout_alignParentLeft="true"/>
 
 

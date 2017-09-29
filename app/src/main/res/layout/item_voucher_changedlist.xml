@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/most_use_paddingNine"
+    android:paddingLeft="@dimen/most_use_paddingTen"
+    android:paddingRight="@dimen/most_use_paddingTen"
+    android:paddingTop="@dimen/most_use_paddingNine">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_voucher_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="锦江区 - 城北加油站"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/main_position_size" />
+
+        <TextView
+            android:id="@+id/item_voucher_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2017-05-08"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/main_position_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_voucher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="李华"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/main_position_size" />
+
+        <ImageView
+            android:id="@+id/item_voucher_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/state_give" />
+
+        <TextView
+            android:id="@+id/item_voucher_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/most_use_paddingtwentyEight"
+            android:layout_marginTop="@dimen/most_use_paddingNine"
+            android:layout_toLeftOf="@id/item_voucher_state"
+            android:layout_toRightOf="@id/item_voucher_name"
+            android:singleLine="false"
+            android:text="@string/default_describe"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/main_position_size" />
+    </RelativeLayout>
+
+
+</LinearLayout>

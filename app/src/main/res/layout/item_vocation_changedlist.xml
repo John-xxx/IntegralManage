@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/most_use_paddingNine"
+    android:paddingLeft="@dimen/most_use_paddingTen"
+    android:paddingRight="@dimen/most_use_paddingTen"
+    android:paddingTop="@dimen/most_use_paddingNine">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_feedback_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="李晓"
+            android:textColor="@color/color_main_text"
+            android:textSize="@dimen/main_position_size" />
+
+        <TextView
+            android:id="@+id/item_feedback_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="12:30"
+            android:textColor="@color/color_title_bg"
+            android:textSize="@dimen/main_position_size" />
+
+        <TextView
+            android:id="@+id/item_feedback_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/most_use_paddingTen"
+            android:layout_toRightOf="@id/item_feedback_name"
+            android:background="@color/color_title_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/most_use_paddingFive"
+            android:paddingLeft="@dimen/most_use_paddingTen"
+            android:paddingRight="@dimen/most_use_paddingTen"
+            android:paddingTop="@dimen/most_use_paddingFive"
+            android:text="培训类"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_position_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_feedback_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:singleLine="false"
+        android:text="@string/default_describe"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/textsize_tweenteen" />
+
+</LinearLayout>

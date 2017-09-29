@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/most_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:background="@color/color_title_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/most_use_paddingFifteen"
+        android:paddingTop="@dimen/most_use_paddingFifteen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用额度（分)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_twween" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/most_use_paddingFive"
+            android:text="546"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_fifty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/most_use_paddingFive"
+            android:background="@drawable/shape_circle"
+            android:paddingBottom="@dimen/most_use_paddingSix"
+            android:paddingLeft="@dimen/most_use_paddingFifteen"
+            android:paddingRight="@dimen/most_use_paddingFifteen"
+            android:paddingTop="@dimen/most_use_paddingSix"
+            android:text="查看明细"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingFifteen"
+            android:paddingLeft="@dimen/dimen_login_margin"
+            android:paddingTop="@dimen/most_use_paddingFifteen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总积分"
+                android:textColor="@color/black"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingNine"
+                android:text="700"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/text_size_thirty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingFifteen"
+            android:paddingLeft="@dimen/dimen_login_margin"
+            android:paddingTop="@dimen/most_use_paddingFifteen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已兑换积分"
+                android:textColor="@color/black"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingNine"
+                android:text="125"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/text_size_thirty" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/most_use_paddingFifteen"
+        android:paddingTop="@dimen/most_use_paddingFifteen">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="代金券"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="积分"
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/color_hint_text"
+            android:textSize="@dimen/text_size_tweenty" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/most_use_paddingFive"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -16,4 +16,7 @@ public class Constants {
     public static final int TAB_PRESENT = 0;//当前积分
     public static final int TAB_HISTORY = 1;//历史积分
 
+
+    public static final int ACTION_TAKE_PHOTO = 0x12;//拍照标识
+
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/most_use_paddingFifteen"
+    android:paddingTop="@dimen/most_use_paddingFifteen"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="5元"
+        android:textColor="@color/color_hint_text"
+        android:textSize="@dimen/text_size_tweenty"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:textColor="@color/color_hint_text"
+        android:textSize="@dimen/text_size_tweenty"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="兑换"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/most_use_paddingFive"
+        android:paddingTop="@dimen/most_use_paddingFive"
+        android:textSize="@dimen/text_size_tweenty"
+        android:background="@color/color_title_bg"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>

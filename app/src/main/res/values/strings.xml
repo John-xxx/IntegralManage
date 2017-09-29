@@ -18,6 +18,7 @@
     <string name="str_check_point">现场打分</string>
     <string name="str_integral_change">积分兑换</string>
     <string name="str_problem">问题投诉</string>
+    <string name="str_problem_list">问题列表</string>
     <string name="str_mesage">消息推送</string>
     <string name="str_default_office">成都分公司</string>
     <string name="str_default_name">聂仁杰</string>
@@ -57,6 +58,7 @@
     <string name="str_subpoint_item">减分指标</string>
     <string name="str_describe">描述</string>
     <string name="str_accessory">附件</string>
+    <string name="str_notice">*图片限制5张（1M/张）</string>
 
 
 
@@ -67,7 +69,19 @@
     <string name="str_dayof_point">已兑换假期天数</string>
     <string name="str_moneyof_award">积分奖励金额</string>
     <string name="str_dayof_award">积分奖励天数</string>
+    <string name="str_voucher_award">代金券奖励</string>
+    <string name="str_vocation_award">假期数奖励</string>
+    <string name="str_detail_award">奖励明细</string>
 
+
+
+
+    <string name="str_target_class">指标分类</string>
+    <string name="str_target">指标</string>
+
+
+
+    <string name="default_describe">5月20日参加省公司培训未签到</string>
 
 
 </resources>

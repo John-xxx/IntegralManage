@@ -98,6 +98,106 @@
                 android:background="@drawable/scrollview_bg"
                 android:divider="@color/most_bg_color">
 
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/change_office_voucher"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/scrollview_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/most_use_paddingFifteen"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/most_use_paddingNine"
+                            android:drawableTop="@mipmap/ico_changed_money"
+                            android:gravity="center"
+                            android:text="@string/str_voucher_award"
+                            android:textColor="@color/color_title_bg"
+                            android:textSize="@dimen/main_position_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="162"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/textsize_tweentyFour" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="(元)"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/main_position_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/change_office_vocation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/scrollview_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/most_use_paddingFifteen"
+                        android:paddingBottom="@dimen/most_use_paddingNine"
+                        android:paddingTop="@dimen/most_use_paddingNine">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/most_use_paddingNine"
+                            android:drawableTop="@mipmap/ico_changed_day"
+                            android:gravity="center"
+                            android:text="@string/str_vocation_award"
+                            android:textColor="@color/color_title_bg"
+                            android:textSize="@dimen/main_position_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/most_use_paddingFive"
+                                android:text="13"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/textsize_tweentyFour" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="(天)"
+                                android:textColor="@color/color_integral_person"
+                                android:textSize="@dimen/main_position_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+
                 <TableRow
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -289,104 +389,6 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:text="(天)"
-                                android:textColor="@color/color_integral_person"
-                                android:textSize="@dimen/main_position_size" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </TableRow>
-
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/scrollview_bg"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/most_use_paddingFifteen"
-                        android:paddingBottom="@dimen/most_use_paddingNine"
-                        android:paddingTop="@dimen/most_use_paddingNine">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="@dimen/most_use_paddingNine"
-                            android:drawableTop="@mipmap/ico_changed_money"
-                            android:gravity="center"
-                            android:text="@string/str_moneyof_award"
-                            android:textColor="@color/color_title_bg"
-                            android:textSize="@dimen/main_position_size" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/most_use_paddingFive"
-                                android:text="162"
-                                android:textColor="@color/color_integral_person"
-                                android:textSize="@dimen/textsize_tweentyFour" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom"
-                                android:text="(分)"
-                                android:textColor="@color/color_integral_person"
-                                android:textSize="@dimen/main_position_size" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/scrollview_bg"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/most_use_paddingFifteen"
-                        android:paddingBottom="@dimen/most_use_paddingNine"
-                        android:paddingTop="@dimen/most_use_paddingNine">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="@dimen/most_use_paddingNine"
-                            android:drawableTop="@mipmap/ico_changed_day"
-                            android:gravity="center"
-                            android:text="@string/str_dayof_award"
-                            android:textColor="@color/color_title_bg"
-                            android:textSize="@dimen/main_position_size" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/most_use_paddingFive"
-                                android:text="1620"
-                                android:textColor="@color/color_integral_person"
-                                android:textSize="@dimen/textsize_tweentyFour" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom"
-                                android:text="(分)"
                                 android:textColor="@color/color_integral_person"
                                 android:textSize="@dimen/main_position_size" />
                         </LinearLayout>
