@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
                 }
                 break;
             case R.id.push_message:
-                intent.setClass(getApplicationContext(),PushMessage.class);
+                intent.setClass(getApplicationContext(),MessageActivity.class);
                 break;
         }
         startActivity(intent);
