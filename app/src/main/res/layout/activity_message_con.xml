@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/message_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back_" />
+
+        <TextView
+            android:id="@+id/message_detail_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/message_con_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+        android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+        android:layout_marginRight="@dimen/most_use_paddingFifteen"
+        android:layout_marginTop="@dimen/most_use_paddingFive"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingNine"
+            android:paddingTop="@dimen/most_use_paddingNine">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:id="@+id/message_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="趙老師"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="内容"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:id="@+id/message_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:paddingBottom="@dimen/most_use_paddingFourty"
+                android:text="@string/default_describe"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

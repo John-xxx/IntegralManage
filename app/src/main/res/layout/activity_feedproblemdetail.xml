@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="@dimen/most_use_paddingNine"
+        android:paddingBottom="@dimen/most_use_paddingEighteen"
+        android:paddingTop="@dimen/most_use_paddingEighteen">
+
+        <ImageView
+            android:id="@+id/feedback_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_problem_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo_text_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/most_use_paddingFifteen"
+        android:layout_marginLeft="@dimen/most_use_paddingFifteen"
+        android:layout_marginRight="@dimen/most_use_paddingFifteen"
+        android:layout_marginTop="@dimen/most_use_paddingEighteen"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/most_use_paddingNine"
+            android:paddingTop="@dimen/most_use_paddingNine">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:text="@string/str_target_class"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:id="@+id/feedback_detail_inspector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="培训类"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_target"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:id="@+id/feedback_detail_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:singleLine="true"
+                android:text="授课"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFifteen"
+                android:text="@string/str_describe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_position_size" />
+
+            <TextView
+                android:id="@+id/feedback_detail_describe"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:background="@drawable/button_bg"
+                android:hint="问题描述"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/most_use_paddingFifteen"
+                android:textColor="@color/color_hint_text"
+                android:textSize="@dimen/logo_text_size" />
+
+
+            <com.yz.dl.integralmanage.view.AddAccessoryView
+                android:id="@+id/feedbacd_detailimage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/most_use_paddingFive"
+                android:orientation="horizontal">
+
+            </com.yz.dl.integralmanage.view.AddAccessoryView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -22,6 +23,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 问题反馈列表
  * Created by I'M CHAMAN on 2017/9/27.
  */
 
@@ -56,6 +58,12 @@ public class FeedProblemOffice extends Activity {
         }
         adapter = new ProblemAdapter(getApplicationContext(), list);
         feedbackOfficeList.setAdapter(adapter);
+        feedbackOfficeList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(getApplicationContext(),FeedProblemDeatil.class));
+            }
+        });
     }
 
     @OnClick({R.id.feedback_office_back, R.id.feedback_office_search})

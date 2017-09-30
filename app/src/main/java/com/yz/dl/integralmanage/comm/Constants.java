@@ -27,4 +27,8 @@ public class Constants {
     public static final int TAB_CHANGEDVOUCHAER = 0;//代金券奖励
     public static final int TAB_CHANGEDVOCATION = 1;//假期数奖励
 
+    public static final int STATE_CHANGED = 0x11;//已经兑换
+    public static final int STATE_GIVE = 0x12;//已经发放
+
+
 }

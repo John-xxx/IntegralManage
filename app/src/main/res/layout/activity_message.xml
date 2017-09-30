@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/color_bg"
-    >
+    android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:layout_centerInParent="true"
             android:text="@string/message_title"
             android:textColor="@color/color_position"
-            android:textSize="@dimen/main_position_size"/>
+            android:textSize="@dimen/main_position_size" />
 
         <ImageView
             android:id="@+id/message_back"
@@ -29,24 +29,26 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="15dp"
             android:background="@mipmap/back_" />
+
         <ImageView
             android:id="@+id/message_send_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:background="@mipmap/message_add" />
+            android:background="@mipmap/ico_title_add" />
     </RelativeLayout>
 
     <ListView
-    android:id="@+id/message_listview"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="15dp"
-    android:layout_marginRight="15dp"
-    android:layout_marginLeft="15dp"
-    android:dividerHeight="15dp"
-    android:divider="@color/color_bg"
-    />
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:divider="@color/color_bg"
+        android:dividerHeight="15dp"
+        android:scrollbars="none" />
 
 </LinearLayout>

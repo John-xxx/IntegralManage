@@ -39,9 +39,9 @@ public class ChangeOfficeDetailFragmentAdapter extends FragmentPagerAdapter {
                 }
                 return new ChangedVocationFragment();
             default:
-                ChangedVoucherFragment d_integralPresentFragment = new ChangedVoucherFragment();
-                if (d_integralPresentFragment != null) {
-                    return d_integralPresentFragment;
+                ChangedVoucherFragment d_changedVoucherFragment = new ChangedVoucherFragment();
+                if (d_changedVoucherFragment != null) {
+                    return d_changedVoucherFragment;
                 }
                 return new ChangedVoucherFragment();
         }

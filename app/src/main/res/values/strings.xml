@@ -18,6 +18,7 @@
     <string name="str_check_point">现场打分</string>
     <string name="str_integral_change">积分兑换</string>
     <string name="str_problem">问题投诉</string>
+    <string name="str_problem_detail">投诉详情</string>
     <string name="str_problem_list">问题列表</string>
     <string name="str_mesage">消息推送</string>
     <string name="str_default_office">成都分公司</string>
@@ -79,6 +80,11 @@
 
 
     <string name="default_describe">5月20日参加省公司培训未签到</string>
+
+
+    <string name="message_title">消息推送</string>
+    <string name="message_con_title">消息发送</string>
+    <string name="message_con_detail">消息详情</string>
 
 
 </resources>

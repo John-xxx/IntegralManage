@@ -2,7 +2,6 @@ package com.yz.dl.integralmanage.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
-
 import com.yz.dl.integralmanage.R;
 
 /**
