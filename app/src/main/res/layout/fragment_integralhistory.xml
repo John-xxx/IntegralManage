@@ -26,7 +26,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/most_use_paddingFive"
+                    android:paddingLeft="@dimen/most_use_paddingNine"
+                    android:paddingRight="@dimen/most_use_paddingNine"
+                    android:paddingTop="@dimen/most_use_paddingFive">
 
                     <TextView
                         android:id="@+id/integralhistory_fromDate"
@@ -53,12 +57,17 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/most_use_paddingNine"
                     android:background="@color/white"
+                    android:paddingBottom="@dimen/most_use_paddingFive"
+                    android:paddingLeft="@dimen/most_use_paddingNine"
+                    android:paddingRight="@dimen/most_use_paddingNine"
+                    android:paddingTop="@dimen/most_use_paddingFive"
                     android:text="李四"/>
 
                 <ImageView
                     android:id="@+id/integralhistory_search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/most_use_paddingNine"
                     android:src="@mipmap/search"/>
             </LinearLayout>

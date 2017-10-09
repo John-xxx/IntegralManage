@@ -14,10 +14,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yz.dl.integralmanage.R;
+import com.yz.dl.integralmanage.adapter.HistoryIntegralListAdapter;
 import com.yz.dl.integralmanage.base.BaseFragment;
+import com.yz.dl.integralmanage.bean.HistoryItemBean;
+import com.yz.dl.integralmanage.bean.RankingBean;
 import com.yz.dl.integralmanage.ui.IntegralSearch;
 import com.yz.dl.integralmanage.view.ListViewForScrollView;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import butterknife.Bind;
@@ -45,8 +49,26 @@ public class IntegralHistoryFragment extends BaseFragment {
     private Calendar calendar;// 用来装日期的
     private DatePickerDialog dialog;
 
+    HistoryIntegralListAdapter historyIntegralListAdapter;
+    ArrayList<HistoryItemBean> list;
+
     @Override
     protected void TODO(View view, Bundle savedInstanceState) {
+
+        list = new ArrayList<>();
+        for (int i = 1; i < 5; i++) {
+            HistoryItemBean historyItemBean = new HistoryItemBean();
+            historyItemBean.setDateTime("2017年10月" + i + "日");
+            historyItemBean.setPoint(i+10);
+            historyItemBean.setTypeName("纯枪销量");
+            historyItemBean.setTypeNum(9000+i*8 + "吨");
+            list.add(historyItemBean);
+        }
+
+        historyIntegralListAdapter = new HistoryIntegralListAdapter(getActivity(),list);
+
+        integralhistoryList.setAdapter(historyIntegralListAdapter);
+
 
     }
 
