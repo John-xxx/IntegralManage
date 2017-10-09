@@ -75,6 +75,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/inspector_area_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -95,6 +96,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/inspector_gas_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -115,6 +117,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/inspector_person_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -135,6 +138,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/inspector_date_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -156,6 +160,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/inspector_addpoint_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -177,6 +182,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/inspector_markdown_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -197,6 +203,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <EditText
+                android:id="@+id/inspector_describe_edit"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="@dimen/most_use_paddingFive"

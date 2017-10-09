@@ -6,6 +6,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 
 /**
@@ -109,6 +111,12 @@ public class Utils {
 
         }
         return list;
+    }
+
+    public static Date strtoDate(String sTime, String format){
+        SimpleDateFormat df = new SimpleDateFormat(format);//设置日期格式在android中，创建文件时，文件名中不能包含“：”冒号
+        String filename = df.format(new Date());
+        return null;
     }
 
 }

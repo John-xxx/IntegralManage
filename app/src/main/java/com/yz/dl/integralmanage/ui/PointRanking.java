@@ -66,6 +66,7 @@ public class PointRanking extends FragmentActivity {
                 this.finish();
                 break;
             case R.id.ranking_search:
+                searchAll(Constants.TAB_MANAGER);
                 Toast.makeText(getApplicationContext(), "搜索", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ranking_tab_manager:
@@ -79,4 +80,12 @@ public class PointRanking extends FragmentActivity {
                 break;
         }
     }
+
+    /**
+     * 搜索
+     */
+    private void searchAll(int type){
+        
+    }
+
 }

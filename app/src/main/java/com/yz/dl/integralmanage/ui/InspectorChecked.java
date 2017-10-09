@@ -1,26 +1,26 @@
 package com.yz.dl.integralmanage.ui;
 
 import android.app.Activity;
-import android.app.Dialog;
+import android.app.DatePickerDialog;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
+import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.yz.dl.integralmanage.R;
 import com.yz.dl.integralmanage.comm.Constants;
@@ -29,15 +29,15 @@ import com.yz.dl.integralmanage.view.AddAccessoryView;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
-import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 稽查员打分
  * Created by I'M CHAMAN on 2017/9/27.
  */
 
@@ -50,7 +50,27 @@ public class InspectorChecked extends Activity {
     ImageView addAccessory;
     @Bind(R.id.accessory_layout)
     AddAccessoryView accessoryLayout;
+    @Bind(R.id.inspector_area_select)
+    TextView inspectorAreaSelect;
+    @Bind(R.id.inspector_gas_select)
+    TextView inspectorGasSelect;
+    @Bind(R.id.inspector_person_select)
+    TextView inspectorPersonSelect;
+    @Bind(R.id.inspector_date_select)
+    TextView inspectorDateSelect;
+    @Bind(R.id.inspector_addpoint_select)
+    TextView inspectorAddpointSelect;
+    @Bind(R.id.inspector_markdown_select)
+    TextView inspectorMarkdownSelect;
+    @Bind(R.id.inspector_describe_edit)
+    EditText inspectorDescribeEdit;
+
+
     File currentImageFile;
+
+
+    private Calendar calendar;// 用来装日期的
+    private DatePickerDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,32 +79,91 @@ public class InspectorChecked extends Activity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.inspectorchecked_back, R.id.inspector_office_select, R.id.add_accessory})
+    @OnClick({R.id.inspectorchecked_back, R.id.inspector_office_select, R.id.add_accessory, R.id.inspector_area_select, R.id.inspector_gas_select, R.id.inspector_person_select, R.id.inspector_date_select, R.id.inspector_addpoint_select, R.id.inspector_markdown_select})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.inspectorchecked_back:
                 break;
             case R.id.inspector_office_select:
-//                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//                //设置标题
-//                builder.setTitle("请选择");
-//                //设置图标
-//                builder.setIcon(R.mipmap.ic_launcher);
-//                builder.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        Toast.makeText(getApplicationContext(), "你点击的是条目" + i, Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-//                builder.create();
-//                builder.show();
+                String[] items = {"成都分公司", "绵阳分公司"};
+                officeSelect(items,inspectorOfficeSelect);
                 break;
             case R.id.add_accessory:
 
                 showSimpleListDialog();
                 break;
+            case R.id.inspector_area_select:
+                String[] areas = {"武侯区", "锦江区", "温江区"};
+                officeSelect(areas,inspectorAreaSelect);
+                break;
+            case R.id.inspector_gas_select:
+                String[] gass = {"宏大加油站", "江淮加油站", "称心蒲剑油站"};
+                officeSelect(gass,inspectorGasSelect);
+                break;
+            case R.id.inspector_person_select:
+                String[] pesons = {"李华", "张明", "鲁信"};
+                officeSelect(pesons,inspectorPersonSelect);
+                break;
+            case R.id.inspector_date_select:
+
+
+
+                break;
+            case R.id.inspector_addpoint_select:
+                String[] addpoints = {"+3|主动用普通话交流", "+2|油枪放置规范", "+5|认真对待每一位客户"};
+                officeSelect(addpoints,inspectorAddpointSelect);
+                inspectorMarkdownSelect.setText("您已选择加分项");
+                break;
+            case R.id.inspector_markdown_select:
+                String[] markdowns = {"-3|无故旷工", "-2|懈怠工作", "-5|辱骂客户"};
+                officeSelect(markdowns,inspectorMarkdownSelect);
+                inspectorAddpointSelect.setText("您已选择减分项");
+                break;
         }
     }
+
+//
+//    private void setDateTime() {
+//        calendar = Calendar.getInstance();
+//        dialog = new DatePickerDialog(MainActivity.this,
+//                new DatePickerDialog.OnDateSetListener() {
+//
+//                    @Override
+//                    public void onDateSet(DatePicker view, int year,
+//                                          int monthOfYear, int dayOfMonth) {
+//                        System.out.println("年-->" + year + "月-->"
+//                                + monthOfYear + "日-->" + dayOfMonth);
+//                        getTime.setText(year + "/" + monthOfYear + "/"
+//                                + dayOfMonth);
+//                    }
+//                }, calendar.get(Calendar.YEAR), calendar
+//                .get(Calendar.MONTH), calendar
+//                .get(Calendar.DAY_OF_MONTH));
+//        dialog.show();
+//    }
+
+    /**
+     * 二级公司选择
+     */
+    private void officeSelect(final String[] items, final TextView tv) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//        builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//
+//            }
+//        });
+        builder.setItems(items, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                tv.setText(items[i]);
+            }
+        });
+        builder.setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
 
     /**
      * 附件上传弹出dialog选择拍照或者相册
@@ -96,9 +175,14 @@ public class InspectorChecked extends Activity {
         builder.setItems(Items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-//                Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//                startActivityForResult(openCameraIntent, 1);
-                takePhoto();
+                switch (i) {
+                    case 0:
+                        takePhoto();
+                        break;
+                    case 1:
+                        selectPhoto();
+                        break;
+                }
             }
         });
         builder.setCancelable(true);
@@ -106,6 +190,15 @@ public class InspectorChecked extends Activity {
         dialog.show();
     }
 
+    /**
+     * 从相册选择图片并处理
+     */
+    private void selectPhoto() {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("image/*");
+        startActivityForResult(Intent.createChooser(intent, "选择图片"), Constants.ACTION_SELCET_PHOTO);
+    }
 
     /**
      * 拍照并保存到sd卡下integral文件夹下
@@ -135,14 +228,27 @@ public class InspectorChecked extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (resultCode == RESULT_OK && requestCode == Constants.ACTION_TAKE_PHOTO) {
+        if (resultCode == RESULT_OK) {
             String sdStatus = Environment.getExternalStorageState();
             if (!sdStatus.equals(Environment.MEDIA_MOUNTED)) { // 检测sd是否可用
                 Log.i("TestFile", "SD card is not avaiable/writeable right now.");
                 return;
             }
+
             //原图
-            String filePath = currentImageFile.getAbsolutePath();
+            String filePath = null;
+
+            if (requestCode == Constants.ACTION_TAKE_PHOTO) {
+                filePath = currentImageFile.getAbsolutePath();
+            }
+            if (requestCode == Constants.ACTION_SELCET_PHOTO && data != null) {
+
+                ContentResolver resolver = getContentResolver();
+                //照片的原始资源地址
+                Uri originalUri = data.getData();
+                filePath = getRealFilePath(getApplicationContext(), originalUri);
+            }
+
             Bitmap bitmap = BitmapFactory.decodeFile(filePath);
             //利用Bitmap对象创建缩略图
             Bitmap showbitmap = ThumbnailUtils.extractThumbnail(bitmap, 250, 250);
@@ -153,7 +259,39 @@ public class InspectorChecked extends Activity {
         }
     }
 
-//    private void addView2Accessory(Bitmap bitmap){
-//        accessoryLayout.addView(imageView,0);
-//    }
+
+    /**
+     * 获取文件路径
+     **/
+    public String uri2filePath(Uri uri) {
+        String[] projection = {MediaStore.Images.Media.DATA};
+        Cursor cursor = managedQuery(uri, projection, null, null, null);
+        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        String path = cursor.getString(column_index);
+        return path;
+    }
+
+    public static String getRealFilePath(final Context context, final Uri uri) {
+        if (null == uri) return null;
+        final String scheme = uri.getScheme();
+        String data = null;
+        if (scheme == null)
+            data = uri.getPath();
+        else if (ContentResolver.SCHEME_FILE.equals(scheme)) {
+            data = uri.getPath();
+        } else if (ContentResolver.SCHEME_CONTENT.equals(scheme)) {
+            Cursor cursor = context.getContentResolver().query(uri, new String[]{MediaStore.Images.ImageColumns.DATA}, null, null, null);
+            if (null != cursor) {
+                if (cursor.moveToFirst()) {
+                    int index = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
+                    if (index > -1) {
+                        data = cursor.getString(index);
+                    }
+                }
+                cursor.close();
+            }
+        }
+        return data;
+    }
 }

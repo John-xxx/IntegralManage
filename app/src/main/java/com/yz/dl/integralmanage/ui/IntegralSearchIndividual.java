@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 加油员->积分查询类
  * Created by I'M CHAMAN on 2017/9/26.
  */
 

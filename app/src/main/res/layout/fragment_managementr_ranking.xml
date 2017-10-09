@@ -39,7 +39,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_weight="1"
                     android:background="@drawable/button_bg"
-                    android:drawableRight="@mipmap/pushslide"
+                    android:drawableRight="@mipmap/ranking"
                     android:gravity="center_horizontal"
                     android:singleLine="true"
                     android:text="@string/str_ranking"

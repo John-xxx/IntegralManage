@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="office_second">
+        <item>青羊分公司</item>
+        <item>成都分公司</item>
+        <item>达州分公司</item>
+    </string-array>
+    <string-array name="array_area">
+        <item>青羊区</item>
+        <item>锦江区</item>
+        <item>武侯区</item>
+    </string-array>
+    <string-array name="array_gas">
+        <item>宏达加油站</item>
+        <item>远东加油站</item>
+        <item>人人加油站</item>
+    </string-array>
+</resources>

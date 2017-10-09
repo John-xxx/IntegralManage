@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/dialog_tab_2office"
+            style="@style/tab_button"
+            android:background="@drawable/selector_dialog_searchradiobg"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/str_2office"
+            android:textColor="@color/selector_dialog_searchtextcolor"
+            android:textSize="@dimen/main_position_size"/>
+
+        <RadioButton
+            android:id="@+id/dialog__tab_area"
+            style="@style/tab_button"
+            android:background="@drawable/selector_dialog_searchradiobg"
+            android:button="@null"
+            android:text="@string/str_text_area"
+            android:textColor="@color/selector_dialog_searchtextcolor"
+            android:textSize="@dimen/main_position_size"/>
+
+        <RadioButton
+            android:id="@+id/dialog__tab_gas"
+            style="@style/tab_button"
+            android:background="@drawable/selector_dialog_searchradiobg"
+            android:button="@null"
+            android:text="@string/str_text_gas"
+            android:textColor="@color/selector_dialog_searchtextcolor"
+            android:textSize="@dimen/main_position_size"/>
+    </RadioGroup>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:entries="@array/office_second"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:entries="@array/array_area"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:entries="@array/array_gas"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/most_use_paddingNine"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="名次"/>
+
+        <com.yz.dl.integralmanage.view.LineEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="1"
+            android:textColorHint="@color/color_hint_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="到"
+            android:textColor="@color/color_hint_text"/>
+
+        <com.yz.dl.integralmanage.view.LineEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="100"
+            android:textColorHint="@color/color_hint_text"/>
+    </LinearLayout>
+
+
+</LinearLayout>

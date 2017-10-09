@@ -54,7 +54,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
-                android:id="@+id/inspector_office_select"
+                android:id="@+id/feedback_personal_study"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -75,6 +75,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <TextView
+                android:id="@+id/feedback_personal_to"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -96,6 +97,7 @@
                 android:textSize="@dimen/main_position_size" />
 
             <EditText
+                android:id="@+id/feedback_personal_describe"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="@dimen/most_use_paddingFive"
@@ -157,6 +159,7 @@
 
 
                 <Button
+                    android:id="@+id/feedback_reapit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
@@ -167,9 +170,10 @@
                     android:paddingTop="@dimen/most_use_paddingNine"
                     android:text="重置"
                     android:textColor="@color/color_hint_text"
-                    android:textSize="@dimen/logo_text_size" />
+                    android:textSize="@dimen/logo_text_size"/>
 
                 <Button
+                    android:id="@+id/feedback_submit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/most_use_paddingThirty"
