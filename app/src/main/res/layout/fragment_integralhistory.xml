@@ -75,7 +75,12 @@
             <com.yz.dl.integralmanage.view.ListViewForScrollView
                 android:id="@+id/integralhistory_list"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="@dimen/most_use_paddingFive"
+                android:paddingTop="@dimen/most_use_paddingFive"
+                />
 
         </LinearLayout>
 
