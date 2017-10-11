@@ -139,7 +139,7 @@ public class IntegralHistoryFragment extends BaseFragment {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                textView.setText(year + "年" + monthOfYear + "月");
+                textView.setText(year + "年" + monthOfYear+1 + "月");
             }
         }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         hideDatePickerDay(dialog);

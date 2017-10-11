@@ -69,7 +69,8 @@
                         android:button="@null"
                         android:checked="true"
                         android:text="@string/str_text_stationManager"
-                        android:textColor="@color/most_bg_color"
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
                         android:textSize="@dimen/main_position_size" />
 
                     <RadioButton
@@ -77,7 +78,8 @@
                         style="@style/tab_button"
                         android:button="@null"
                         android:text="@string/str_text_management"
-                        android:textColor="@color/most_bg_color"
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
                         android:textSize="@dimen/main_position_size" />
 
                     <RadioButton
@@ -85,7 +87,8 @@
                         style="@style/tab_button"
                         android:button="@null"
                         android:text="@string/str_text_operator"
-                        android:textColor="@color/most_bg_color"
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
                         android:textSize="@dimen/main_position_size" />
                 </RadioGroup>
             </RelativeLayout>

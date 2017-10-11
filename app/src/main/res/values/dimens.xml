@@ -5,6 +5,7 @@
 
     <dimen name="most_use_paddingFive">5dp</dimen>
     <dimen name="most_use_paddingSix">6dp</dimen>
+    <dimen name="most_use_paddingSeven">7dp</dimen>
     <dimen name="most_use_paddingNine">9dp</dimen>
     <dimen name="most_use_paddingTen">10dp</dimen>
     <dimen name="most_use_paddingFifteen">15dp</dimen>

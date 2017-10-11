@@ -21,6 +21,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+//    sourceSets {
+//        main {
+//            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+//        }
+//    }
 }
 
 dependencies {
@@ -35,4 +41,5 @@ dependencies {
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.google.code.gson:gson:2.5'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
+//    compile 'de.greenrobot:greendao:2.1.0'
 }

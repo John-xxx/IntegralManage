@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
  */
 
 public class MD5 {
-    public String encrypt(String message) {
+    public static String encrypt(String message) {
         final StringBuffer md5Code = new StringBuffer();
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("MD5");

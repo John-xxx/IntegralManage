@@ -42,7 +42,7 @@ public class IntegralSearchIndividual extends FragmentActivity {
         adapter = new IntegralSearchFragmentAdapter(getSupportFragmentManager());
         integralsearchViewpager.setAdapter(adapter);
         integralsearchViewpager.setOffscreenPageLimit(2);
-        integralsearchViewpager.setScrollEnable(true);
+        integralsearchViewpager.setScrollEnable(false);
         integralsearchViewpager.setCurrentItem(Constants.TAB_PRESENT, false);
     }
 

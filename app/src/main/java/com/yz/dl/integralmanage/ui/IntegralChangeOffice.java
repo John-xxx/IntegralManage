@@ -16,6 +16,7 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import com.yz.dl.integralmanage.R;
+import com.yz.dl.integralmanage.comm.Constants;
 
 import java.util.Calendar;
 
@@ -71,10 +72,14 @@ public class IntegralChangeOffice extends Activity {
                 dateSelect();
                 break;
             case R.id.change_office_voucher:
-                startActivity(new Intent(getApplicationContext(), ChangeOfficeDetail.class));
+                Intent intent1 = new Intent(getApplicationContext(), ChangeOfficeDetail.class);
+                intent1.putExtra("DISPLAY", Constants.TAB_CHANGEDVOUCHAER);
+                startActivity(intent1);
                 break;
             case R.id.change_office_vocation:
-                startActivity(new Intent(getApplicationContext(), ChangeOfficeDetail.class));
+                Intent intent = new Intent(getApplicationContext(), ChangeOfficeDetail.class);
+                intent.putExtra("DISPLAY", Constants.TAB_CHANGEDVOCATION);
+                startActivity(intent);
                 break;
         }
     }
@@ -108,7 +113,7 @@ public class IntegralChangeOffice extends Activity {
      */
     private void dateSelect() {
         calendar = Calendar.getInstance();
-        dialog = new DatePickerDialog(IntegralChangeOffice.this,DatePickerDialog.THEME_HOLO_LIGHT,new DatePickerDialog.OnDateSetListener() {
+        dialog = new DatePickerDialog(IntegralChangeOffice.this, DatePickerDialog.THEME_HOLO_LIGHT, new DatePickerDialog.OnDateSetListener() {
 
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {

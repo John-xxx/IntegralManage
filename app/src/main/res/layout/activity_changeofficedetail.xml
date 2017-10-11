@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_position"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_position"
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:background="@mipmap/back_" />
+            android:background="@mipmap/back_"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
             android:layout_centerVertical="true"
             android:text="@string/str_detail_award"
             android:textColor="@color/white"
-            android:textSize="@dimen/logo_text_size" />
+            android:textSize="@dimen/logo_text_size"/>
 
         <ImageView
             android:id="@+id/change_office_detail_search"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@mipmap/search" />
+            android:src="@mipmap/search"/>
 
     </RelativeLayout>
 
@@ -70,17 +70,19 @@
                         style="@style/tab_button"
                         android:button="@null"
                         android:checked="true"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
                         android:text="@string/str_voucher_award"
-                        android:textColor="@color/most_bg_color"
-                        android:textSize="@dimen/main_position_size" />
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:textSize="@dimen/main_position_size"/>
 
                     <RadioButton
                         android:id="@+id/changge_office_tab_vocation"
                         style="@style/tab_button"
                         android:button="@null"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
                         android:text="@string/str_vocation_award"
-                        android:textColor="@color/most_bg_color"
-                        android:textSize="@dimen/main_position_size" />
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:textSize="@dimen/main_position_size"/>
                 </RadioGroup>
             </RelativeLayout>
         </LinearLayout>
@@ -89,6 +91,6 @@
             android:id="@+id/change_office_detail_viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/changge_office_detail_linear" />
+            android:layout_below="@id/changge_office_detail_linear"/>
     </RelativeLayout>
 </LinearLayout>

@@ -10,14 +10,14 @@ import java.util.HashMap;
  * Created by I'M CHAMAN on 2017/9/27.
  */
 
-public class InrgralHashMap extends HashMap<String, Object> implements Serializable {
+public class IntegralHashMap extends HashMap<String, Object> implements Serializable {
 
     private static final long serialVersionUID = 1000L;
 
-    public InrgralHashMap() {
+    public IntegralHashMap() {
     }
 
-    public static InrgralHashMap fromJson2SAFHashMap(String jsonString) {
+    public static IntegralHashMap fromJson2SAFHashMap(String jsonString) {
         try {
             return Utils.convertJSONToMap(new JSONObject(jsonString));
         } catch (JSONException e) {
@@ -50,8 +50,8 @@ public class InrgralHashMap extends HashMap<String, Object> implements Serializa
         return (Long) (get(key));
     }
 
-    public InrgralHashMap getInrgralHashMap(String key) {
-        return (InrgralHashMap) get(key);
+    public IntegralHashMap getInrgralHashMap(String key) {
+        return (IntegralHashMap) get(key);
     }
 
     public InrgralArrayList getInrgralArrayList(String key) {

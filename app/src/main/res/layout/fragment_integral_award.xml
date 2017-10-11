@@ -14,7 +14,6 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/most_use_paddingNine"
             android:layout_weight="1"
             android:background="@drawable/blue_bg"
             android:gravity="center_horizontal"
@@ -55,7 +54,6 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/most_use_paddingNine"
             android:layout_weight="1"
             android:background="@drawable/blue_bg"
             android:gravity="center_horizontal"

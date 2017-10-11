@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/most_use_paddingNine"
         android:background="@color/color_title_bg"
         android:gravity="center_horizontal"
         android:orientation="vertical"

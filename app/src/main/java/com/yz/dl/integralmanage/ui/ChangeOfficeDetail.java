@@ -47,11 +47,21 @@ public class ChangeOfficeDetail extends FragmentActivity {
         setContentView(R.layout.activity_changeofficedetail);
         ButterKnife.bind(this);
 
+        int display = getIntent().getExtras().getInt("DISPLAY");
         adapter = new ChangeOfficeDetailFragmentAdapter(getSupportFragmentManager());
         changeOfficeDetailViewpager.setAdapter(adapter);
-        changeOfficeDetailViewpager.setScrollEnable(true);
+        changeOfficeDetailViewpager.setScrollEnable(false);
         changeOfficeDetailViewpager.setOffscreenPageLimit(2);
-        changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOUCHAER,false);
+        switch (display) {
+            case Constants.TAB_CHANGEDVOCATION:
+                changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOCATION, false);
+                changgeOfficeTabVocation.setChecked(true);
+                break;
+            case Constants.TAB_CHANGEDVOUCHAER:
+                changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOUCHAER, false);
+                changgeOfficeTabVoucher.setChecked(true);
+                break;
+        }
     }
 
     @OnClick({R.id.change_office_detail_back, R.id.change_office_detail_search, R.id.changge_office_tab_voucher, R.id.changge_office_tab_vocation})
@@ -63,10 +73,10 @@ public class ChangeOfficeDetail extends FragmentActivity {
             case R.id.change_office_detail_search:
                 break;
             case R.id.changge_office_tab_voucher:
-                changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOUCHAER,false);
+                changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOUCHAER, false);
                 break;
             case R.id.changge_office_tab_vocation:
-                changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOCATION,false);
+                changeOfficeDetailViewpager.setCurrentItem(Constants.TAB_CHANGEDVOCATION, false);
                 break;
         }
     }

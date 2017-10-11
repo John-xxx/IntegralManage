@@ -28,8 +28,8 @@ public class InrgralArrayList extends ArrayList<Object> {
         return (Double) get(index);
     }
 
-    public InrgralHashMap getSAFHashMap(int index) {
-        return (InrgralHashMap) get(index);
+    public IntegralHashMap getSAFHashMap(int index) {
+        return (IntegralHashMap) get(index);
     }
 
     public InrgralArrayList getSAFArrayList(int index) {

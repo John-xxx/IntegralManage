@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_position"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_position"
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:id="@+id/integralsearch_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/back_" />
+            android:background="@mipmap/back_"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             android:layout_centerHorizontal="true"
             android:text="@string/str_integral_search"
             android:textColor="@color/white"
-            android:textSize="@dimen/logo_text_size" />
+            android:textSize="@dimen/logo_text_size"/>
 
     </RelativeLayout>
 
@@ -61,16 +61,18 @@
                         android:button="@null"
                         android:checked="true"
                         android:text="@string/str_present_integral"
-                        android:textColor="@color/most_bg_color"
-                        android:textSize="@dimen/main_position_size" />
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
+                        android:textSize="@dimen/main_position_size"/>
 
                     <RadioButton
                         android:id="@+id/integral_tab_history"
                         style="@style/tab_button"
                         android:button="@null"
                         android:text="@string/str_history_integral"
-                        android:textColor="@color/most_bg_color"
-                        android:textSize="@dimen/main_position_size" />
+                        android:textColor="@color/selector_tab_textcolor"
+                        android:drawableBottom="@drawable/selector_tab_rankstate"
+                        android:textSize="@dimen/main_position_size"/>
                 </RadioGroup>
             </RelativeLayout>
         </LinearLayout>
@@ -79,6 +81,6 @@
             android:id="@+id/integralsearch_viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/integral_linear" />
+            android:layout_below="@id/integral_linear"/>
     </RelativeLayout>
 </LinearLayout>
