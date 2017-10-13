@@ -60,11 +60,11 @@ public class LineChartView extends View {
     /**
      * 第一条折线的画笔
      */
-    private int lineOneColor = Color.parseColor("#000000");
+    private int lineOneColor = Color.parseColor("#d800ff");
     /**
      * 第二条折线的画笔
      */
-    private int lineTwoColor = Color.parseColor("#f9a13f");
+    private int lineTwoColor = Color.parseColor("#1f88de");
     /**
      * 第一条折线的中间圆点
      */
@@ -123,8 +123,8 @@ public class LineChartView extends View {
 
 
         path = new Path();
-        lineOneBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.exit_app);
-        lineTwoBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.exit_app);
+        lineOneBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.integral_type_red);
+        lineTwoBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.integral_type_blue);
         setLayoutParams(new ViewGroup.LayoutParams((int) (this.xLineData.size() * 6f * datePadding + 3.5f * datePadding), ViewGroup.LayoutParams.MATCH_PARENT));
 
     }
@@ -142,7 +142,7 @@ public class LineChartView extends View {
     }
 
     /**
-     * 绘制折线Title
+     * 绘制折线Title 
      *
      * @param c
      */

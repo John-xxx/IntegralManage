@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 25
@@ -22,11 +23,13 @@ android {
         }
     }
 
-//    sourceSets {
-//        main {
-//            java.srcDirs = ['src/main/java', 'src/main/java-gen']
-//        }
-//    }
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.yz.dl.integralmanage.greendao'
+        targetGenDir 'src/main/java'
+    }
+
+
 }
 
 dependencies {
@@ -41,5 +44,5 @@ dependencies {
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.google.code.gson:gson:2.5'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
-//    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'org.greenrobot:greendao:3.2.2'
 }

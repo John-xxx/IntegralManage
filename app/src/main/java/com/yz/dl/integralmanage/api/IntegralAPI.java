@@ -14,7 +14,9 @@ import com.zhy.http.okhttp.callback.Callback;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.HashMap;
+import java.util.Map;
 
 import okhttp3.MediaType;
 
@@ -35,6 +37,7 @@ public class IntegralAPI {
     private static final String version = "/v1";
     //-------------------------------------action------------------------------------------
     private static final String login = version + "/login";
+    private static final String user_headUpLoad = "";
 
 
     /**
@@ -48,7 +51,7 @@ public class IntegralAPI {
      * @param securityKey
      * @param callback
      */
-    public static void requestIntegral(Context context, String method, String action, JSONObject prm,String token, String securityKey, Callback callback) {
+    public static void requestIntegral(Context context, String method, String action, JSONObject prm, String token, String securityKey, Callback callback) {
         //后台分配的appKey
         String appKey = ConfigUtils.getInstance().getString("appKey", "123456");
         //数据请求主地址
@@ -56,7 +59,7 @@ public class IntegralAPI {
         //时间戳
         String timeStamp = System.currentTimeMillis() + "";
         //数字签名
-        String sign = SignUtils.sign(action, method, prm == null ? null : prm.toString(),timeStamp, appKey, token, securityKey);
+        String sign = SignUtils.sign(action, method, prm == null ? null : prm.toString(), timeStamp, appKey, token, securityKey);
         HashMap<String, String> headers = new HashMap<>();
         headers.put("MATRIX-APPKEY", appKey);
         headers.put("MATRIX-TIMESTAMP", timeStamp);
@@ -121,6 +124,37 @@ public class IntegralAPI {
                 .build()
                 .execute(callback);
     }
+
+
+    /**
+     * 图片上传
+     *
+     * @param files    Map 文件
+     * @param callback
+     */
+    public static void upLoadImage(Map<String, File> files, Callback callback) {
+//        OkHttpUtils
+//                .post()
+//                .addFile("imageFile", imageFile.getName(), imageFile)
+//                .url(url + user_headUpLoad)
+//                .params((HashMap) MSRUtils.convertJSONToMap(prm))
+//                .build()
+//                .execute(callback);
+        JSONObject prm = new JSONObject();
+        try {
+            prm.put("model", "imageUpload");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        OkHttpUtils
+                .post()
+                .files("imageFiles", files)
+                .url(url + user_headUpLoad)
+                .params((HashMap) Utils.convertJSONToMap(prm))
+                .build()
+                .execute(callback);
+    }
+
 
     /**
      * 用户登录

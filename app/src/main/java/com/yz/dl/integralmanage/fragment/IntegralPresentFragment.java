@@ -195,10 +195,10 @@ public class IntegralPresentFragment extends BaseFragment {
         List<Integer> yLineDate = new ArrayList<>();
         List<Integer> lineOneDate = new ArrayList<>();
         List<Integer> lineTwoDate = new ArrayList<>();
-        int[] oneInt = {24, 35, 43, 16, 24, 37, 56};
-        int[] twoInt = {64, 15, 23, 46, 54, 47, 26};
-        int[] yInt = {0, 20, 40, 60, 80};
-        String[] xString = {"1月", "2月", "3月", "4月", "5月", "6月", "7月"};
+        int[] oneInt = {24, 35, 43, 16, 24, 37, 56, 60, 89, 66, 23, 43};
+        int[] twoInt = {64, 15, 23, 46, 54, 47, 26, 45, 22, 26, 34, 66};
+        int[] yInt = {0, 25, 50, 75, 100};
+        String[] xString = {"1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"};
         for (int i = 0; i < oneInt.length; i++) {
             xLineDate.add(xString[i]);
             lineOneDate.add(oneInt[i]);

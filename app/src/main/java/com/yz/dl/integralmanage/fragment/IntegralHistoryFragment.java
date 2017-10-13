@@ -59,13 +59,13 @@ public class IntegralHistoryFragment extends BaseFragment {
         for (int i = 1; i < 5; i++) {
             HistoryItemBean historyItemBean = new HistoryItemBean();
             historyItemBean.setDateTime("2017年10月" + i + "日");
-            historyItemBean.setPoint(i+10);
+            historyItemBean.setPoint(i + 10);
             historyItemBean.setTypeName("纯枪销量");
-            historyItemBean.setTypeNum(9000+i*8 + "吨");
+            historyItemBean.setTypeNum(9000 + i * 8 + "吨");
             list.add(historyItemBean);
         }
 
-        historyIntegralListAdapter = new HistoryIntegralListAdapter(getActivity(),list);
+        historyIntegralListAdapter = new HistoryIntegralListAdapter(getActivity(), list);
 
         integralhistoryList.setAdapter(historyIntegralListAdapter);
 
@@ -139,7 +139,7 @@ public class IntegralHistoryFragment extends BaseFragment {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                textView.setText(year + "年" + monthOfYear+1 + "月");
+                textView.setText(year + "年" + (monthOfYear + 1) + "月");
             }
         }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         hideDatePickerDay(dialog);

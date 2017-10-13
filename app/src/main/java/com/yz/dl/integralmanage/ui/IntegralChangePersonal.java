@@ -43,7 +43,7 @@ public class IntegralChangePersonal extends FragmentActivity {
 
         adapter = new IntegralChangedFragmentAdapter(getSupportFragmentManager());
         changepersonalViewpager.setAdapter(adapter);
-        changepersonalViewpager.setScrollEnable(true);
+        changepersonalViewpager.setScrollEnable(false);
         changepersonalViewpager.setOffscreenPageLimit(3);
         changepersonalViewpager.setCurrentItem(Constants.TAB_GOODSCHANGE,false);
 

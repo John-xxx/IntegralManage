@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.yz.dl.integralmanage.R;
 import com.yz.dl.integralmanage.base.IntrgralBaseAdapter;
-import com.yz.dl.integralmanage.bean.MessageBean;
+import com.yz.dl.integralmanage.database.MessageBean;
 
 import java.util.List;
 

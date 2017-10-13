@@ -386,28 +386,32 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:text="个人"/>
+                        android:text="个人"
+                        android:textColor="#d800ff"/>
 
                     <ImageView
                         android:id="@+id/fragment_integralpresent_lineOne"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/fragment_integralpresent_textOne"
-                        android:src="@mipmap/exit_app"/>
+                        android:src="@mipmap/integral_type_red"/>
 
                     <TextView
                         android:id="@+id/fragment_integralpresent_textTwo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toLeftOf="@id/fragment_integralpresent_lineOne"
-                        android:text="平均"/>
+                        android:text="平均"
+                        android:textColor="#1f88de"/>
 
                     <ImageView
                         android:id="@+id/fragment_integralpresent_lineTwo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/fragment_integralpresent_textTwo"
-                        android:src="@mipmap/exit_app"/>
+                        android:src="@mipmap/integral_type_blue"/>
 
                 </RelativeLayout>
 

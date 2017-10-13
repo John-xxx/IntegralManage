@@ -41,9 +41,14 @@ public class HistoryIntegralListAdapter extends IntrgralBaseAdapter {
 
 
         viewHolder.itemHistoryintegralDate.setText(historyItemBean.getDateTime());
-        viewHolder.itemHistoryintegralPoint.setText("+" + historyItemBean.getPoint());
         viewHolder.itemHistoryintegralTypeName.setText(historyItemBean.getTypeName());
         viewHolder.itemHistoryintegralTypeNum.setText(historyItemBean.getTypeNum());
+        if (position % 2 == 0) {
+            viewHolder.itemHistoryintegralPoint.setTextColor(getContext().getResources().getColor(R.color.gray_holo_dark));
+            viewHolder.itemHistoryintegralPoint.setText("-" + historyItemBean.getPoint());
+        }else {
+            viewHolder.itemHistoryintegralPoint.setText("+" + historyItemBean.getPoint());
+        }
         return view;
     }
 

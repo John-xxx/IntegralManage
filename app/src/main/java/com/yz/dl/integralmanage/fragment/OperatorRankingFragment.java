@@ -44,10 +44,10 @@ public class OperatorRankingFragment extends BaseFragment {
         list = new ArrayList<>();
         for (int i = 1; i < 8; i++) {
             RankingBean person = new RankingBean();
-            person.setArea("安县" + (50 - i));
+            person.setArea("安县");
             person.setTotal("" + (88 - i));
-            person.setName("张开" + (50 - i));
-            person.setGas("成家坝" + (50 - i));
+            person.setName("张开");
+            person.setGas("成家坝");
             person.setNum(i + 2);
             list.add(person);
         }

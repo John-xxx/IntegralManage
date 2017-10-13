@@ -1,14 +1,21 @@
 package com.yz.dl.integralmanage.ui;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yz.dl.integralmanage.R;
 import com.yz.dl.integralmanage.comm.Constants;
+import com.yz.dl.integralmanage.utils.CacheUtils;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -31,6 +38,8 @@ public class MainActivity extends Activity {
     TextView pushMessage;
     @Bind(R.id.activity_main)
     LinearLayout activityMain;
+    @Bind(R.id.main_exit)
+    ImageView mainExit;
 
     private String IDcard;
 
@@ -42,42 +51,94 @@ public class MainActivity extends Activity {
         IDcard = getIntent().getStringExtra("PERSON");
     }
 
-    @OnClick({R.id.main_itegralSearch, R.id.main_checkPoint, R.id.main_integralChange,R.id.feed_problem, R.id.push_message})
+    @OnClick({R.id.main_itegralSearch, R.id.main_checkPoint, R.id.main_integralChange, R.id.feed_problem, R.id.push_message, R.id.main_exit})
     public void onViewClicked(View view) {
-        Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.main_itegralSearch:
                 if (IDcard.equals(Constants.TYPE_MANAGER)) {
-                    intent.setClass(getApplicationContext(), IntegralSearch.class);
+                    mStartActivity(IntegralSearch.class);
                 } else if (IDcard.equals(Constants.TYPE_OPERATOR)) {
-                    intent.setClass(getApplicationContext(), IntegralSearchIndividual.class);
+                    mStartActivity(IntegralSearchIndividual.class);
                 }
                 break;
             case R.id.main_checkPoint:
                 if (IDcard.equals(Constants.TYPE_MANAGER)) {
-                    intent.setClass(getApplicationContext(), InspectorChecked.class);
+                    mStartActivity(InspectorChecked.class);
                 } else if (IDcard.equals(Constants.TYPE_OPERATOR)) {
-                    intent.setClass(getApplicationContext(), ManagerChecked.class);
+                    mStartActivity(ManagerChecked.class);
                 }
                 break;
             case R.id.main_integralChange:
                 if (IDcard.equals(Constants.TYPE_MANAGER)) {
-                    intent.setClass(getApplicationContext(), IntegralChangeOffice.class);
+                    mStartActivity(IntegralChangeOffice.class);
                 } else if (IDcard.equals(Constants.TYPE_OPERATOR)) {
-                    intent.setClass(getApplicationContext(), IntegralChangePersonal.class);
+                    mStartActivity(IntegralChangePersonal.class);
                 }
                 break;
             case R.id.feed_problem:
                 if (IDcard.equals(Constants.TYPE_MANAGER)) {
-                    intent.setClass(getApplicationContext(), FeedProblemOffice.class);
+                    mStartActivity(FeedProblemOffice.class);
                 } else if (IDcard.equals(Constants.TYPE_OPERATOR)) {
-                    intent.setClass(getApplicationContext(), FeedProblemPersonal.class);
+                    mStartActivity(FeedProblemPersonal.class);
                 }
                 break;
             case R.id.push_message:
-                intent.setClass(getApplicationContext(),MessageActivity.class);
+                mStartActivity(MessageActivity.class);
+                break;
+            case R.id.main_exit:
+                exitDialog();
+        }
+    }
+
+    /**
+     * 启动activity
+     *
+     * @param cls
+     */
+    private void mStartActivity(Class<?> cls) {
+        Intent intent = new Intent();
+        intent.setClass(getApplicationContext(), cls);
+        startActivity(intent);
+    }
+
+    /**
+     * 退出当前账号
+     */
+    private void exitDialog() {
+
+        AlertDialog dialog = null;
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final String[] Items = {"退出", "取消"};
+        builder.setItems(Items, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                switch (i) {
+                    case 0:
+                        MainActivity.this.finish();
+                        break;
+                    case 1:
+
+                        break;
+                }
+            }
+        });
+        builder.setCancelable(true);
+        dialog = builder.create();
+        dialog.setTitle("退出当前账号?");
+        dialog.setCancelable(false);
+        dialog.show();
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
+                exitDialog();
                 break;
         }
-        startActivity(intent);
+
+
+        return super.onKeyDown(keyCode, event);
     }
 }

@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -19,6 +20,7 @@ import com.yz.dl.integralmanage.api.IntegralAPI;
 import com.yz.dl.integralmanage.callback.IntegralHashMapCallback;
 import com.yz.dl.integralmanage.utils.IntegralHashMap;
 import com.yz.dl.integralmanage.utils.IntegralUI;
+import com.yz.dl.integralmanage.utils.MD5;
 import com.yz.dl.integralmanage.view.IntegarlWaitDialog;
 import com.yz.dl.integralmanage.view.SlideUnlockView;
 
@@ -71,6 +73,7 @@ public class Login extends Activity implements SlideUnlockView.OnLockListener {
 //            IntegralAPI.login(getApplicationContext(), loginIdcard.getText().toString(), loginPassword.getText().toString(), loginCallback);
             Intent intent = new Intent(Login.this, MainActivity.class);
             intent.putExtra("PERSON", loginIdcard.getText().toString());
+            Log.i("TAG", MD5.encrypt(loginPassword.getText().toString()));
             startActivity(intent);
         } else {
             Toast.makeText(getApplicationContext(), "请输入您的身份证号", Toast.LENGTH_SHORT).show();

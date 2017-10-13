@@ -1,7 +1,5 @@
 package com.yz.dl.integralmanage.ui;
 
-import android.app.Activity;
-import android.app.DatePickerDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -14,22 +12,24 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yz.dl.integralmanage.R;
 import com.yz.dl.integralmanage.comm.Constants;
 import com.yz.dl.integralmanage.view.AddAccessoryView;
+import com.yz.dl.integralmanage.view.slidedatetimepicker.SlideDateTimeListener;
+import com.yz.dl.integralmanage.view.slidedatetimepicker.SlideDateTimePicker;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import butterknife.Bind;
@@ -41,7 +41,7 @@ import butterknife.OnClick;
  * Created by I'M CHAMAN on 2017/9/27.
  */
 
-public class InspectorChecked extends Activity {
+public class InspectorChecked extends FragmentActivity {
     @Bind(R.id.inspectorchecked_back)
     ImageView inspectorcheckedBack;
     @Bind(R.id.inspector_office_select)
@@ -69,9 +69,6 @@ public class InspectorChecked extends Activity {
     File currentImageFile;
 
 
-    private Calendar calendar;// 用来装日期的
-    private DatePickerDialog dialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,10 +80,11 @@ public class InspectorChecked extends Activity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.inspectorchecked_back:
+                this.finish();
                 break;
             case R.id.inspector_office_select:
                 String[] items = {"成都分公司", "绵阳分公司"};
-                officeSelect(items,inspectorOfficeSelect);
+                officeSelect(items, inspectorOfficeSelect);
                 break;
             case R.id.add_accessory:
 
@@ -94,56 +92,70 @@ public class InspectorChecked extends Activity {
                 break;
             case R.id.inspector_area_select:
                 String[] areas = {"武侯区", "锦江区", "温江区"};
-                officeSelect(areas,inspectorAreaSelect);
+                officeSelect(areas, inspectorAreaSelect);
                 break;
             case R.id.inspector_gas_select:
                 String[] gass = {"宏大加油站", "江淮加油站", "称心蒲剑油站"};
-                officeSelect(gass,inspectorGasSelect);
+                officeSelect(gass, inspectorGasSelect);
                 break;
             case R.id.inspector_person_select:
                 String[] pesons = {"李华", "张明", "鲁信"};
-                officeSelect(pesons,inspectorPersonSelect);
+                officeSelect(pesons, inspectorPersonSelect);
                 break;
             case R.id.inspector_date_select:
-
-
-
+                setDateTime();
                 break;
             case R.id.inspector_addpoint_select:
                 String[] addpoints = {"+3|主动用普通话交流", "+2|油枪放置规范", "+5|认真对待每一位客户"};
-                officeSelect(addpoints,inspectorAddpointSelect);
+                officeSelect(addpoints, inspectorAddpointSelect);
                 inspectorMarkdownSelect.setText("您已选择加分项");
                 break;
             case R.id.inspector_markdown_select:
                 String[] markdowns = {"-3|无故旷工", "-2|懈怠工作", "-5|辱骂客户"};
-                officeSelect(markdowns,inspectorMarkdownSelect);
+                officeSelect(markdowns, inspectorMarkdownSelect);
                 inspectorAddpointSelect.setText("您已选择减分项");
                 break;
         }
     }
 
-//
-//    private void setDateTime() {
-//        calendar = Calendar.getInstance();
-//        dialog = new DatePickerDialog(MainActivity.this,
-//                new DatePickerDialog.OnDateSetListener() {
-//
-//                    @Override
-//                    public void onDateSet(DatePicker view, int year,
-//                                          int monthOfYear, int dayOfMonth) {
-//                        System.out.println("年-->" + year + "月-->"
-//                                + monthOfYear + "日-->" + dayOfMonth);
-//                        getTime.setText(year + "/" + monthOfYear + "/"
-//                                + dayOfMonth);
-//                    }
-//                }, calendar.get(Calendar.YEAR), calendar
-//                .get(Calendar.MONTH), calendar
-//                .get(Calendar.DAY_OF_MONTH));
-//        dialog.show();
-//    }
+    /**
+     * 选择日期和时间
+     */
+    private void setDateTime() {
+        new SlideDateTimePicker.Builder(getSupportFragmentManager())
+                .setListener(listener)
+                .setInitialDate(new Date())
+                //.setMinDate(minDate)
+                //.setMaxDate(maxDate)
+                //.setIs24HourTime(true)
+                //.setTheme(SlideDateTimePicker.HOLO_DARK)
+                //.setIndicatorColor(Color.parseColor("#990000"))
+                .build()
+                .show();
+    }
+
+
+    private SlideDateTimeListener listener = new SlideDateTimeListener() {
+
+        private SimpleDateFormat mFormatter = new SimpleDateFormat("yy-MM-dd HH:mm");
+
+        @Override
+        public void onDateTimeSet(Date date) {
+            Log.i("TAG", date.toString());
+            Toast.makeText(InspectorChecked.this, mFormatter.format(date), Toast.LENGTH_SHORT).show();
+            inspectorDateSelect.setText(mFormatter.format(date));
+        }
+
+        // Optional cancel listener
+        @Override
+        public void onDateTimeCancel() {
+            Toast.makeText(InspectorChecked.this,
+                    "Canceled", Toast.LENGTH_SHORT).show();
+        }
+    };
 
     /**
-     * 二级公司选择
+     * 打分选择
      */
     private void officeSelect(final String[] items, final TextView tv) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

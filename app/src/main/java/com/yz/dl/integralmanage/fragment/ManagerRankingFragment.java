@@ -44,8 +44,8 @@ public class ManagerRankingFragment extends BaseFragment {
             RankingBean rankingBean = new RankingBean();
             rankingBean.setArea("成都");
             rankingBean.setNum(i);
-            rankingBean.setGas("南苑" + i);
-            rankingBean.setName("张强" + i);
+            rankingBean.setGas("南苑");
+            rankingBean.setName("张强");
             rankingBean.setTotal((90 - i) + " ");
             list.add(rankingBean);
         }

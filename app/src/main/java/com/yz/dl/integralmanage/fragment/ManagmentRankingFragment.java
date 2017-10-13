@@ -45,10 +45,10 @@ public class ManagmentRankingFragment extends BaseFragment {
         list = new ArrayList<>();
         for (int i = 1; i < 8; i++) {
             RankingBean person = new RankingBean();
-            person.setArea("广安" + (10 - i));
+            person.setArea("广安");
             person.setTotal("" + (98 - i));
-            person.setName("刘成" + (10 - i));
-            person.setGas("张家坝" + (10 - i));
+            person.setName("刘成");
+            person.setGas("张家坝");
             person.setNum(i + 3);
             list.add(person);
         }
